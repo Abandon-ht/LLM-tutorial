@@ -1,14 +1,13 @@
 `MeloTTS-Japanese <https://huggingface.co/myshell-ai/MeloTTS-Japanese>`_
 =========================================
 
+Introduction
+------------
+
+MeloTTS is a high-quality multi-lingual text-to-speech library by MyShell.ai. 
+
+
 melotts-ja-jp
 ----------------
 
-Modalities
-##########
-- Text Input only
-- Audio Output only
-
-Endpoints
-#########
-- **Text-to-Speech**: ``/v1/audio/speech``
+**Japanese model** suitable for the LLM630 Compute Kit, Module LLM, and Module LLM Kit

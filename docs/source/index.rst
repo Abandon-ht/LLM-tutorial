@@ -1,10 +1,9 @@
 Welcome to ModuleLLM's documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**ModuleLLM** Module LLM is an integrated offline large language model (LLM) inference module, designed for terminal devices that require efficient and intelligent interaction. 
+Whether in smart homes, voice assistants, or industrial control, Module LLM can provide you with a smooth and natural AI experience without relying on the cloud, 
+ensuring privacy, security, and stability.
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
@@ -17,9 +16,12 @@ Contents
 --------
 
 .. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
    Overview
    Quickstart
    Models
    Python
-   Arudino
+   Arduino
    UiFlow

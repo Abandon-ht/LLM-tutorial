@@ -33,3 +33,24 @@ Model that can transcribe and translate audio into text.
 - :doc:`Whisper-tiny </model_pages/whisper-tiny>`
 - :doc:`Whisper-base </model_pages/whisper-base>`
 - :doc:`Whisper-small </model_pages/whisper-small>`
+
+Model Pages
+-------------
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Model Pages:
+   :titlesonly:
+   :hidden:
+
+   /model_pages/qwen3-0.6b
+   /model_pages/deepseek-r1-distill-qwen-1.5b
+   /model_pages/qwen2.5-0.5b-instruct
+   /model_pages/qwen2.5-1.5b-instruct
+   /model_pages/qwen2.5-coder-0.5b-instruct
+   /model_pages/melotts-english
+   /model_pages/melotts-chinese
+   /model_pages/melotts-japanese
+   /model_pages/whisper-tiny
+   /model_pages/whisper-base
+   /model_pages/whisper-small
