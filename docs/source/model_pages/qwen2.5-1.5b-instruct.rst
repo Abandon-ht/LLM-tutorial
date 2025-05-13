@@ -16,8 +16,15 @@ Qwen2.5-1.5B-Instruct is part of the Qwen2.5 series, featuring instruction-tuned
 
 This model demonstrates significant improvements in instruction following, generating long texts, and understanding structured data. It supports multilingual capabilities across 29 languages, including English, Chinese, French, and more.
 
+Available NPU Models
+--------------------
+
 qwen2.5-1.5B-instruct
----------------------
+~~~~~~~~~~~~~~~~~~~~~
+
+**base model** providing a 128 context window and a maximum output of 1,024 tokens.
+
+**Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
 
 - 128 context window
 
@@ -27,10 +34,13 @@ qwen2.5-1.5B-instruct
 
 - avg-token/s 3.59
 
-**base model** suitable for the LLM630 Compute Kit, Module LLM, and Module LLM Kit, providing a 128 context window and a maximum output of 1,024 tokens.
 
 qwen2.5-1.5B-p256-ax630c
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Long-Context Model** Compared to the base model, it provides extended context capabilities, offering a 256 context window and a maximum of 1,024 output tokens.
+
+**Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
 
 - 256 context window
 
@@ -40,10 +50,13 @@ qwen2.5-1.5B-p256-ax630c
 
 - avg-token/s 3.57
 
-**Long-Context Model** Compared to the base model, it provides extended context capabilities, offering a 256 context window and a maximum of 1,024 output tokens.
 
 qwen2.5-1.5B-Int4-ax630c
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+**The INT4 quantized model** compared to the base model, provides faster inference speed, providing a 128 context window and a maximum output of 1,024 tokens.
+
+**Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
 
 - 128 context window
 
@@ -52,5 +65,3 @@ qwen2.5-1.5B-Int4-ax630c
 - ttft 1219.54ms
 
 - avg-token/s 4.63
-
-**The INT4 quantized model** compared to the base model, provides faster inference speed, providing a 128 context window and a maximum output of 1,024 tokens.

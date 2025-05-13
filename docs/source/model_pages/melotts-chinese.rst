@@ -8,7 +8,12 @@ MeloTTS is a high-quality multi-lingual text-to-speech library by MyShell.ai.
 
 - The Chinese speaker supports mixed Chinese and English.
 
-melotts-zh-cn
--------------
+Available NPU Models
+--------------------
 
-**Chinese mix EN model** suitable for the LLM630 Compute Kit, Module LLM, and Module LLM Kit
+melotts-zh-cn
+~~~~~~~~~~~~~
+
+**Chinese mix EN model** 
+
+**Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit

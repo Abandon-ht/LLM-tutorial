@@ -13,8 +13,15 @@ Qwen3 is the latest large language model in the Qwen series, offering both dense
 - **Number of Attention Heads (GQA)**: 16 for Q, 8 for KV
 - **Context Length**: 32,768
 
+Available NPU Models
+--------------------
+
 qwen3-0.6B-ax630c
------------------
+~~~~~~~~~~~~~~~~~
+
+**base model** suitable for the LLM630 Compute Kit, Module LLM, and Module LLM Kit, providing a 128 context window and a maximum output of 1,024 tokens.
+
+**Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
 
 - 128 context window
 
@@ -23,5 +30,3 @@ qwen3-0.6B-ax630c
 - ttft 361.81ms
 
 - avg-token/s 10.28
-
-**base model** suitable for the LLM630 Compute Kit, Module LLM, and Module LLM Kit, providing a 128 context window and a maximum output of 1,024 tokens.

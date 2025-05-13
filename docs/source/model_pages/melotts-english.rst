@@ -8,12 +8,19 @@ MeloTTS is a high-quality multi-lingual text-to-speech library by MIT and MyShel
 
 - The English speaker supports American, British, Indian, Australian and Default accents.
 
-melotts-en-default
-------------------
+Available NPU Models
+--------------------
 
-**default speaker model** suitable for the LLM630 Compute Kit, Module LLM, and Module LLM Kit
+melotts-en-default
+~~~~~~~~~~~~~~~~~~
+
+**default speaker model**
+
+**Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
 
 melotts-en-us
--------------
+~~~~~~~~~~~~~
 
-**American speaker model** suitable for the LLM630 Compute Kit, Module LLM, and Module LLM Kit
+**American speaker model**
+
+**Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
