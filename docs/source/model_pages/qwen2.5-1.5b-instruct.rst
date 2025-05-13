@@ -1,5 +1,5 @@
 `Qwen2.5-1.5B-Instruct <https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct>`_
-================================================
+============================================================================
 
 Introduction
 ------------
@@ -17,7 +17,7 @@ Qwen2.5-1.5B-Instruct is part of the Qwen2.5 series, featuring instruction-tuned
 This model demonstrates significant improvements in instruction following, generating long texts, and understanding structured data. It supports multilingual capabilities across 29 languages, including English, Chinese, French, and more.
 
 qwen2.5-1.5B-instruct
-----------------
+---------------------
 
 - 128 context window
 
@@ -30,7 +30,7 @@ qwen2.5-1.5B-instruct
 **base model** suitable for the LLM630 Compute Kit, Module LLM, and Module LLM Kit, providing a 128 context window and a maximum output of 1,024 tokens.
 
 qwen2.5-1.5B-p256-ax630c
-----------------
+------------------------
 
 - 256 context window
 
@@ -43,7 +43,7 @@ qwen2.5-1.5B-p256-ax630c
 **Long-Context Model** Compared to the base model, it provides extended context capabilities, offering a 256 context window and a maximum of 1,024 output tokens.
 
 qwen2.5-1.5B-Int4-ax630c
-----------------
+------------------------
 
 - 128 context window
 

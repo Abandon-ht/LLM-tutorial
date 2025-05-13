@@ -1,5 +1,5 @@
 `DeepSeek-R1-Distill-Qwen-1.5B <https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B>`_
-===============================================================================================
+===================================================================================================
 
 Introduction
 ------------
@@ -15,7 +15,7 @@ DeepSeek-R1-Distill-Qwen-1.5B is fine-tuned based on open-source models, using s
 - **Context Length**: Full 131,072 tokens and generation up to 8,192 tokens
 
 deepseek-r1-1.5B-ax630c
-----------------
+-----------------------
 
 - 128 context window
 
@@ -28,7 +28,7 @@ deepseek-r1-1.5B-ax630c
 **base model** suitable for the LLM630 Compute Kit, Module LLM, and Module LLM Kit, providing a 128 context window and a maximum output of 1,024 tokens.
 
 deepseek-r1-1.5B-p256-ax630c
-----------------
+----------------------------
 
 - 256 context window
 

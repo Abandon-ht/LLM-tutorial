@@ -1,5 +1,5 @@
 `Qwen3-0.6B <https://huggingface.co/Qwen/Qwen3-0.6B>`_
-================================================
+======================================================
 
 Introduction
 ------------
@@ -14,7 +14,7 @@ Qwen3 is the latest large language model in the Qwen series, offering both dense
 - **Context Length**: 32,768
 
 qwen3-0.6B-ax630c
-----------------
+-----------------
 
 - 128 context window
 

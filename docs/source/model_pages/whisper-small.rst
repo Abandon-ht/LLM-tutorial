@@ -1,8 +1,8 @@
 `whisper-small <https://huggingface.co/openai/whisper-small>`_
-================================================
+==============================================================
 
 whisper-small
-----------------
+-------------
 
 Whisper is a pre-trained model for automatic speech recognition (ASR) and speech translation. Trained on 680k hours of labelled data Whisper models demonstrate a strong ability to generalise to many datasets and domains without the need for fine-tuning.
 
@@ -13,6 +13,6 @@ Whisper is a pre-trained model for automatic speech recognition (ASR) and speech
 - avg-decode 148.92ms
 
 whisper-small
-----------------
+-------------
 
 **whisper-small** suitable for the LLM630 Compute Kit, Module LLM, and Module LLM Kit

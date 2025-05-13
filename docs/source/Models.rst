@@ -35,7 +35,7 @@ Model that can transcribe and translate audio into text.
 - :doc:`Whisper-small </model_pages/whisper-small>`
 
 Model Pages
--------------
+-----------
 
 .. toctree::
    :maxdepth: 1

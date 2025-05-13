@@ -1,5 +1,5 @@
 `whisper-tiny <https://huggingface.co/openai/whisper-tiny>`_
-================================================
+============================================================
 
 Introduction
 ------------
@@ -13,6 +13,6 @@ Whisper is a pre-trained model for automatic speech recognition (ASR) and speech
 - avg-decode 32.54ms
 
 whisper-tiny
-----------------
+------------
 
 **whisper-tiny** suitable for the LLM630 Compute Kit, Module LLM, and Module LLM Kit
