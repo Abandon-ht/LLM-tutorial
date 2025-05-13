@@ -19,10 +19,13 @@ This model demonstrates significant improvements in instruction following, gener
 Available NPU Models
 --------------------
 
-qwen2.5-1.5B-instruct
-~~~~~~~~~~~~~~~~~~~~~
+Base Model
+~~~~~~~~~~
 
-**base model** providing a 128 context window and a maximum output of 1,024 tokens.
+qwen2.5-1.5B-ax630c
+^^^^^^^^^^^^^^^^^^^
+
+The **Base Model** provides a 128 context window and a maximum output of 1,024 tokens.
 
 **Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
 
@@ -34,11 +37,13 @@ qwen2.5-1.5B-instruct
 
 - avg-token/s 3.59
 
+Long-Context Model
+~~~~~~~~~~~~~~~~~~
 
 qwen2.5-1.5B-p256-ax630c
-~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Long-Context Model** Compared to the base model, it provides extended context capabilities, offering a 256 context window and a maximum of 1,024 output tokens.
+The **Long-Context Model** Compared to the **Base Model**, provides extended context capabilities, providing a 256 context window and a maximum of 1,024 output tokens.
 
 **Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
 
@@ -50,11 +55,13 @@ qwen2.5-1.5B-p256-ax630c
 
 - avg-token/s 3.57
 
+INT4 Quantized Model
+~~~~~~~~~~~~~~~~~~~~
 
 qwen2.5-1.5B-Int4-ax630c
-~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-**The INT4 quantized model** compared to the base model, provides faster inference speed, providing a 128 context window and a maximum output of 1,024 tokens.
+The **INT4 Quantized Model** compared to the **Base Model**, provides faster inference speed, offering a 128 context window and a maximum output of 1,024 tokens.
 
 **Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
 

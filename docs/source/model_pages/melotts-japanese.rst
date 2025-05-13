@@ -9,9 +9,10 @@ MeloTTS is a high-quality multi-lingual text-to-speech library by MyShell.ai.
 Available NPU Models
 --------------------
 
-melotts-ja-jp
-~~~~~~~~~~~~~
+Japanese model
+~~~~~~~~~~~~~~
 
-**Japanese model**
+melotts-ja-jp
+^^^^^^^^^^^^^
 
 **Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit

@@ -12,8 +12,6 @@ Available NPU Models
 whisper-base
 ~~~~~~~~~~~~
 
-**whisper-base**
-
 **Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
 
 - The models are supports multilingual speech recognition and translation.

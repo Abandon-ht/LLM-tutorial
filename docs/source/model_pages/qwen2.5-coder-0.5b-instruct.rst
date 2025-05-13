@@ -17,10 +17,13 @@ Qwen2.5-Coder-0.5B-Instruct is Code-Specific Qwen large language models, Signifi
 Available NPU Models
 --------------------
 
-qwen2.5-Coder-0.5B-ax630c
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Base Model
+~~~~~~~~~~
 
-**base model** providing a 128 context window and a maximum output of 1,024 tokens.
+qwen2.5-Coder-0.5B-ax630c
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The **base model** providing a 128 context window and a maximum output of 1,024 tokens.
 
 **Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
 

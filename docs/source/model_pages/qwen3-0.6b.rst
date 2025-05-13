@@ -19,7 +19,7 @@ Available NPU Models
 qwen3-0.6B-ax630c
 ~~~~~~~~~~~~~~~~~
 
-**base model** suitable for the LLM630 Compute Kit, Module LLM, and Module LLM Kit, providing a 128 context window and a maximum output of 1,024 tokens.
+**base model** providing a 128 context window and a maximum output of 1,024 tokens.
 
 **Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
 

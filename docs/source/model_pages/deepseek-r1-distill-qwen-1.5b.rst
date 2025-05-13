@@ -17,10 +17,13 @@ DeepSeek-R1-Distill-Qwen-1.5B is fine-tuned based on open-source models, using s
 Available NPU Models
 --------------------
 
-deepseek-r1-1.5B-ax630c
-~~~~~~~~~~~~~~~~~~~~~~~
+Base Model
+~~~~~~~~~~
 
-**base model** providing a 128 context window and a maximum output of 1,024 tokens.
+deepseek-r1-1.5B-ax630c
+^^^^^^^^^^^^^^^^^^^^^^^
+
+The **Base Model** providing a 128 context window and a maximum output of 1,024 tokens.
 
 **Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
 
@@ -33,13 +36,15 @@ deepseek-r1-1.5B-ax630c
 
 - avg-token/s 3.57
 
+Long-Context Model
+~~~~~~~~~~~~~~~~~~
 
 deepseek-r1-1.5B-p256-ax630c
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Long-Context Model** Compared to the base model, it provides extended context capabilities, offering a 256 context window and a maximum of 1,024 output tokens.
+The **Long-Context Model** Compared to the **Base Model**, it provides extended context capabilities, offering a 256 context window and a maximum of 1,024 output tokens.
 
-**Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
+**Support Platforms**: LLM630 Compute Kit, Module LLM, Module LLM Kit
 
 - 256 context window
 

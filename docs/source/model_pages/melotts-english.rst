@@ -11,16 +11,18 @@ MeloTTS is a high-quality multi-lingual text-to-speech library by MIT and MyShel
 Available NPU Models
 --------------------
 
-melotts-en-default
-~~~~~~~~~~~~~~~~~~
+Default Speaker Model
+~~~~~~~~~~~~~~~~~~~~~
 
-**default speaker model**
+melotts-en-default
+^^^^^^^^^^^^^^^^^^
 
 **Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
 
-melotts-en-us
-~~~~~~~~~~~~~
+American Speaker Model
+~~~~~~~~~~~~~~~~~~~~~~
 
-**American speaker model**
+melotts-en-us
+^^^^^^^^^^^^^
 
 **Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
