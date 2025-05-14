@@ -15,6 +15,14 @@ Flagship chat models
 - :doc:`Qwen2.5-0.5B-Instruct </model_pages/qwen2.5-0.5b-instruct>`
 - :doc:`Qwen2.5-1.5B-Instruct </model_pages/qwen2.5-1.5b-instruct>`
 - :doc:`Qwen2.5-Coder-0.5B-Instruct </model_pages/qwen2.5-coder-0.5b-instruct>`
+- :doc:`Llama-3.2-1B-Instruct </model_pages/llama-3.2-1b-instruct>`
+- :doc:`openbuddy-llama3.2-1b-v23.1-131k </model_pages/openbuddy-llama3.2-1b-v23.1-131k>`
+
+Multimodal Model
+----------------
+- :doc:`InternVL2_5-1B-MPO </model_pages/internvl2_5-1b-mpo>`
+- :doc:`SmolVLM-256M-Instruct </model_pages/smoivlm-256m-instruct>`
+- :doc:`SmolVLM-500M-Instruct </model_pages/smoivlm-500m-instruct>`
 
 Text-to-speech
 --------------
@@ -48,6 +56,11 @@ Model Pages
    /model_pages/qwen2.5-0.5b-instruct
    /model_pages/qwen2.5-1.5b-instruct
    /model_pages/qwen2.5-coder-0.5b-instruct
+   /model_pages/llama-3.2-1b-instruct
+   /model_pages/openbuddy-llama3.2-1b-v23.1-131k
+   /model_pages/internvl2_5-1b-mpo
+   /model_pages/smoivlm-256m-instruct
+   /model_pages/smoivlm-500m-instruct
    /model_pages/melotts-english
    /model_pages/melotts-chinese
    /model_pages/melotts-japanese

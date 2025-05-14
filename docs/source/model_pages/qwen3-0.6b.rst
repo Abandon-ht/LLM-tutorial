@@ -16,10 +16,13 @@ Qwen3 is the latest large language model in the Qwen series, offering both dense
 Available NPU Models
 --------------------
 
-qwen3-0.6B-ax630c
-~~~~~~~~~~~~~~~~~
+Base Model
+~~~~~~~~~~
 
-**base model** providing a 128 context window and a maximum output of 1,024 tokens.
+qwen3-0.6B-ax630c
+^^^^^^^^^^^^^^^^^
+
+The **base model** providing a 128 context window and a maximum output of 1,024 tokens.
 
 **Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
 

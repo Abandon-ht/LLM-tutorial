@@ -22,8 +22,8 @@ Available NPU Models
 Base Model
 ~~~~~~~~~~
 
-qwen2.5-0.5B-ax630c
-^^^^^^^^^^^^^^^^^^^
+qwen2.5-0.5B-prefill-20e
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 The **Base Model** providing a 128 context window and a maximum output of 1,024 tokens.
 
