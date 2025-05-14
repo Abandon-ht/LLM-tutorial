@@ -33,3 +33,10 @@ The **base model** providing a 128 context window and a maximum output of 1,024 
 - ttft 361.81ms
 
 - avg-token/s 10.28
+
+Install
+"""""""
+
+.. code-block:: shell
+
+    apt install llm-model-qwen3-0.6b-ax630c

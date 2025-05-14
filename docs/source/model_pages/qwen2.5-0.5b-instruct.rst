@@ -37,6 +37,13 @@ The **Base Model** providing a 128 context window and a maximum output of 1,024 
 
 - avg-token/s 10.32
 
+Install
+"""""""
+
+.. code-block:: shell
+
+    apt install llm-model-qwen2.5-0.5b-prefill-20e
+
 Long-Context Model
 ~~~~~~~~~~~~~~~~~~
 
@@ -55,6 +62,13 @@ The **Long-Context Model** Compared to the **Base Model**, it provides extended 
 
 - avg-token/s 10.30
 
+Install
+"""""""
+
+.. code-block:: shell
+
+    apt install llm-model-qwen2.5-0.5b-p256-ax630c
+
 INT4 Quantized Model
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -72,3 +86,10 @@ The **INT4 Quantized Model** compared to the **Base Model**, provides faster inf
 - ttft 442.95ms
 
 - avg-token/s 12.52
+
+Install
+"""""""
+
+.. code-block:: shell
+
+    apt install llm-model-qwen2.5-0.5b-int4-ax630c

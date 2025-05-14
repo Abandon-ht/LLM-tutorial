@@ -19,3 +19,10 @@ whisper-base
 - encode 660.31ms
 
 - avg-decode 51.11ms
+
+Install
+"""""""
+
+.. code-block:: shell
+
+    apt install llm-model-whisper-base

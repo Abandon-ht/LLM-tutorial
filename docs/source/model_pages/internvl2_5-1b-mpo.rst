@@ -30,3 +30,10 @@ The **Base Model** providing a 256 context window and a maximum output of 1,024 
 - Image encoding size 364*364
 
 - Image encoding time 1164.61ms
+
+Install
+"""""""
+
+.. code-block:: shell
+
+    apt install llm-model-internvl2.5-1b-364-ax630c

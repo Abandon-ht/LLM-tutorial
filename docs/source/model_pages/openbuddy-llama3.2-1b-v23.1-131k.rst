@@ -29,3 +29,10 @@ The **Base Model** providing a 128 context window and a maximum output of 1,024 
 - ttft 891.02ms
 
 - avg-token/s 4.52
+
+Install
+"""""""
+
+.. code-block:: shell
+
+    apt install llm-model-openbuddy-llama3.2-1b-ax630c

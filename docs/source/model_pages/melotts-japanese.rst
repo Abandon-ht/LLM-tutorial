@@ -16,3 +16,7 @@ melotts-ja-jp
 ^^^^^^^^^^^^^
 
 **Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
+
+.. code-block:: shell
+
+    apt install llm-model-melotts-ja-jp

@@ -33,3 +33,10 @@ The **Base Model** providing a 128 context window and a maximum output of 1,024 
 - Image encoding size 512*512
 
 - Image encoding time 838.30ms
+
+Install
+"""""""
+
+.. code-block:: shell
+
+    apt install llm-model-smolvlm-500m-ax630c

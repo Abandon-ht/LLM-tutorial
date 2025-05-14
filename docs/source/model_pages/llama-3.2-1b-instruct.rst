@@ -29,6 +29,13 @@ The **Base Model** providing a 128 context window and a maximum output of 1,024 
 
 - avg-token/s 4.48
 
+Install
+"""""""
+
+.. code-block:: shell
+
+    apt install llm-model-llama3.2-1b-prefill-ax630c
+
 Long-Context Model
 ~~~~~~~~~~~~~~~~~~
 
@@ -46,3 +53,10 @@ The **Long-Context Model** Compared to the **Base Model**, it provides extended 
 - ttft 2601.11ms
 
 - avg-token/s 4.49
+
+Install
+"""""""
+
+.. code-block:: shell
+
+    apt install llm-model-llama3.2-1b-p256-ax630c

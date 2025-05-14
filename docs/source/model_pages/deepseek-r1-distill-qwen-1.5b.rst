@@ -36,6 +36,13 @@ The **Base Model** providing a 128 context window and a maximum output of 1,024 
 
 - avg-token/s 3.57
 
+Install
+"""""""
+
+.. code-block:: shell
+
+    apt install llm-model-deepseek-r1-1.5b-ax630c
+
 Long-Context Model
 ~~~~~~~~~~~~~~~~~~
 
@@ -53,3 +60,10 @@ The **Long-Context Model** Compared to the **Base Model**, it provides extended 
 - ttft 3056.86ms
 
 - avg-token/s 3.57
+
+Install
+"""""""
+
+.. code-block:: shell
+
+    apt install llm-model-deepseek-r1-1.5b-p256-ax630c

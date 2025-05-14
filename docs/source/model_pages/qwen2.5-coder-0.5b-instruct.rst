@@ -30,3 +30,10 @@ The **base model** providing a 128 context window and a maximum output of 1,024 
 - 128 context window
 
 - 1,024 max output tokens
+
+Install
+"""""""
+
+.. code-block:: shell
+
+    apt install llm-model-qwen2.5-coder-0.5b-ax630c

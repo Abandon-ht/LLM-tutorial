@@ -19,3 +19,10 @@ whisper-small
 - encode 1606.08ms
 
 - avg-decode 148.92ms
+
+Install
+"""""""
+
+.. code-block:: shell
+
+    apt install llm-model-whisper-small

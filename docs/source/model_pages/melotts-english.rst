@@ -19,6 +19,13 @@ melotts-en-default
 
 **Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
 
+Install
+"""""""
+
+.. code-block:: shell
+
+    apt install llm-model-melotts-en-us
+
 American Speaker Model
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -26,3 +33,7 @@ melotts-en-us
 ^^^^^^^^^^^^^
 
 **Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
+
+.. code-block:: shell
+
+    apt install llm-model-melotts-en-default
