@@ -1,6 +1,12 @@
 Text-to-Speech
 ==============
 
+**Before using, make sure you have the latest software packages installed**
+
+.. code-block:: shell
+
+    apt install llm-melotts
+
 .. note::
 
     This example is for the M5Stack Module LLM. It requires the M5Stack Module LLM to be connected to the M5Stack CoreS3 or M5Stack Basic.
@@ -11,6 +17,12 @@ Text-to-Speech
 
 MeloTTS-English Example
 -----------------------
+
+**Before using, make sure you have the latest model packages installed**
+
+.. code-block:: shell
+
+    apt install llm-model-melotts-en-default
 
 .. code-block:: cpp
 
@@ -126,6 +138,12 @@ class ApiMelotts
 
 MeloTTS-Japanese Example
 ------------------------
+
+**Before using, make sure you have the latest model packages installed**
+
+.. code-block:: shell
+
+    apt install llm-model-melotts-ja-jp
 
 .. code-block:: cpp
 

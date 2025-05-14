@@ -1,8 +1,8 @@
 UiFlow
 ======
 
-Examples:
----------
+Examples
+--------
 
 - :doc:`Large Language Model </uiflow_examples/llm>`
 

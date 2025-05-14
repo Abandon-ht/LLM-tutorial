@@ -1,8 +1,8 @@
 Python
 ======
 
-Examples:
----------
+Examples
+--------
 
 - :doc:`Large Language Model </python_examples/llm>`
 

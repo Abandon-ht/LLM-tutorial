@@ -5,8 +5,7 @@ Welcome to ModuleLLM's documentation!
 Whether in smart homes, voice assistants, or industrial control, Module LLM can provide you with a smooth and natural AI experience without relying on the cloud, 
 ensuring privacy, security, and stability.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Check out the `Module LLM Kit <https://docs.m5stack.com/en/module/Module%20LLM%20Kit>`_ for further information.
 
 .. note::
 

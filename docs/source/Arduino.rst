@@ -13,8 +13,8 @@ Environment Setup
 
 2.Board Manager Installation: Refer to the `Basic Environment Setup Guide <https://docs.m5stack.com/en/arduino/arduino_board>`_ to complete the M5Stack board manager installation and select the M5Core development board.
 
-Examples:
----------
+Examples
+--------
 
 - :doc:`Text-to-Speech </arduino_examples/text-to-speech>`
 - :doc:`whisper </arduino_examples/whisper>`
