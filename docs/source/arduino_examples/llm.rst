@@ -116,9 +116,6 @@ English Example
         delay(20);
     }
 
-Japanese Example
-----------------
-
 .. code-block:: cpp
 
         struct ApiLlmSetupConfig_t {
@@ -136,6 +133,9 @@ Japanese Example
 - **model**: The model name. You can use "qwen2.5-0.5B-prefill-20e" for the Qwen2.5 model.
 - **response_format**: The response format.
 - **max_token_len**: The maximum number of tokens to generate. The default is 127. You can set it to 512 for larger models.
+
+Japanese Example
+----------------
 
 .. code-block:: cpp
 

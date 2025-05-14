@@ -19,6 +19,7 @@ Examples:
 - :doc:`Text-to-Speech </arduino_examples/text-to-speech>`
 - :doc:`whisper </arduino_examples/whisper>`
 - :doc:`Large Language Model </arduino_examples/llm>`
+- :doc:`Voice Assistant </arduino_examples/voice_assistant>`
 
 
 
@@ -31,3 +32,4 @@ Examples:
    /arduino_examples/text-to-speech
    /arduino_examples/whisper
    /arduino_examples/llm
+   /arduino_examples/voice_assistant
