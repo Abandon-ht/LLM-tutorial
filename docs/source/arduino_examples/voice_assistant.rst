@@ -5,7 +5,7 @@ Voice Assistant
 
 .. code-block:: shell
 
-    apt install llm-whisper llm-kws llm-vad llm-melotts
+    apt install llm-whisper llm-kws llm-vad llm-llm llm-melotts
 
 .. note::
 

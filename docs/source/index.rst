@@ -11,9 +11,6 @@ Check out the `Module LLM Kit <https://docs.m5stack.com/en/module/Module%20LLM%2
 
    This project is under active development.
 
-Contents
---------
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
