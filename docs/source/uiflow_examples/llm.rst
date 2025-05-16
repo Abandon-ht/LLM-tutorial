@@ -7,8 +7,8 @@ Large Language Model
 
     apt install llm-llm
 
-Micropython Example:
---------------------
+Micropython Example
+-------------------
 
 **Before using, make sure you have the latest model packages installed**
 
@@ -107,8 +107,14 @@ Micropython Example:
             except ImportError:
                 print("please update to latest firmware")
 
-UIFLOW2 Example:
-----------------
+UIFLOW2 Example
+---------------
+
+**Before using, make sure you have the latest model packages installed**
+
+.. code-block:: shell
+
+    apt install llm-model-qwen2.5-0.5b-prefill-20e
 
 .. image:: ../images/uiflow2/llm/uiflow2_block_1747296964450.svg
    :alt: Example image

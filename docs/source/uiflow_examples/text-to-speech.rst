@@ -7,8 +7,8 @@ Text-to-Speech
 
     apt install llm-melotts
 
-Micropython English Example:
-----------------------------
+Micropython English Example
+---------------------------
 
 **Before using, make sure you have the latest model packages installed**
 
@@ -43,7 +43,7 @@ Micropython English Example:
         tte_text = 'x plus x equals to y.'.replace('x', str(adding_number))
         tte_text = tte_text.replace('y', str((adding_number + adding_number)))
         label3.setText(str(tte_text))
-        llm_0.melotts_inference(llm_0.get_latest_melotts_work_id(), tte_text, 10000, 'melotts_inference')
+        llm_0.tts_inference(llm_0.get_latest_melotts_work_id(), tte_text, 10000, 'melotts_inference')
 
 
     def setup():
@@ -65,7 +65,7 @@ Micropython English Example:
         label1.setText(str('Setup Audio module..'))
         llm_0.audio_setup(cap_volume=0.5, play_volume=0.15, request_id='audio_setup')
         label1.setText(str('Setup TTS module..'))
-        llm_0.melotts_setup(model='melotts-en-default', input='tts.utf-8.stream', enoutput=False, enkws='', request_id='tts_setup')
+        llm_0.melotts_setup(model='melotts-en-default', input='tts.utf-8.stream', enoutput=False, enkws='', request_id='melotts_setup')
         adding_number = 0
         label1.setText(str('OK'))
 
@@ -88,8 +88,26 @@ Micropython English Example:
             except ImportError:
                 print("please update to latest firmware")
 
-Micropython Japanese Example:
------------------------------
+UIFLOW2 English Example
+-----------------------
+
+**Before using, make sure you have the latest model packages installed**
+
+.. code-block:: shell
+
+    apt install llm-model-melotts-en-default
+
+.. image:: ../images/uiflow2/text-to-speech/uiflow2_block_1747367104955.svg
+   :alt: Example image
+
+.. image:: ../images/uiflow2/text-to-speech/uiflow2_block_1747367110491.svg
+   :alt: Example image
+
+.. image:: ../images/uiflow2/text-to-speech/uiflow2_block_1747367107959.svg
+   :alt: Example image
+
+Micropython Japanese Example
+----------------------------
 
 **Before using, make sure you have the latest model packages installed**
 
@@ -135,7 +153,7 @@ Micropython Japanese Example:
         label0 = Widgets.Label("State", 10, 10, 1.0, 0xffffff, 0x222222, Widgets.FONTS.DejaVu18)
         label1 = Widgets.Label("~", 10, 40, 1.0, 0xffffff, 0x222222, Widgets.FONTS.DejaVu18)
         label2 = Widgets.Label("TTS text:", 10, 70, 1.0, 0xffffff, 0x222222, Widgets.FONTS.DejaVu18)
-        label3 = Widgets.Label("~", 10, 100, 1.0, 0xffffff, 0x222222, Widgets.FONTS.DejaVu18)
+        label3 = Widgets.Label("~", 10, 100, 1.0, 0xffffff, 0x222222, Widgets.FONTS.EFontJA24)
 
         llm_0 = LlmModule(2, tx=17, rx=18)
         label1.setText(str('Wait ModuleLLM connection..'))
@@ -146,7 +164,7 @@ Micropython Japanese Example:
         label1.setText(str('Setup Audio module..'))
         llm_0.audio_setup(cap_volume=0.5, play_volume=0.15, request_id='audio_setup')
         label1.setText(str('Setup TTS module..'))
-        llm_0.melotts_setup(model='melotts-ja-jp', input='tts.utf-8.stream', enoutput=False, enkws='', request_id='tts_setup')
+        llm_0.melotts_setup(model='melotts-ja-jp', input='tts.utf-8.stream', enoutput=False, enkws='', request_id='melotts_setup')
         adding_number = 0
         label1.setText(str('OK'))
 
@@ -168,3 +186,21 @@ Micropython Japanese Example:
                 print_error_msg(e)
             except ImportError:
                 print("please update to latest firmware")
+
+UIFLOW2 Japanese Example
+------------------------
+
+**Before using, make sure you have the latest model packages installed**
+
+.. code-block:: shell
+
+    apt install llm-model-melotts-ja-jp
+
+.. image:: ../images/uiflow2/text-to-speech/uiflow2_block_1747367699938.svg
+   :alt: Example image
+
+.. image:: ../images/uiflow2/text-to-speech/uiflow2_block_1747367709278.svg
+   :alt: Example image
+
+.. image:: ../images/uiflow2/text-to-speech/uiflow2_block_1747367107959.svg
+   :alt: Example image

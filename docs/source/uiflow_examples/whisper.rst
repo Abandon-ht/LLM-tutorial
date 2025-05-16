@@ -7,8 +7,8 @@ whisper
 
     apt install llm-whisper llm-kws llm-vad
 
-English Example
-^^^^^^^^^^^^^^^
+Micropython English Example
+---------------------------
 
 **Before using, make sure you have the latest model packages installed**
 
@@ -89,8 +89,14 @@ English Example
             except ImportError:
                 print("please update to latest firmware")
 
-UIFLOW2 Example:
-----------------
+UIFLOW2 English Example
+-----------------------
+
+**Before using, make sure you have the latest model packages installed**
+
+.. code-block:: shell
+
+    apt install llm-model-whisper-tiny llm-model-silero-vad llm-model-sherpa-onnx-kws-zipformer-gigaspeech-3.3m-2024-01-01
 
 .. image:: ../images/uiflow2/whisper/uiflow2_block_1747299497165.svg
    :alt: Example image
@@ -101,8 +107,8 @@ UIFLOW2 Example:
 .. image:: ../images/uiflow2/whisper/uiflow2_block_1747299505136.svg
    :alt: Example image
 
-Japanese Example
-^^^^^^^^^^^^^^^^
+Micropython Japanese Example
+----------------------------
 
 **Before using, make sure you have the latest model packages installed**
 
@@ -184,8 +190,14 @@ Japanese Example
             print("please update to latest firmware")
 
 
-UIFLOW2 Example:
-----------------
+UIFLOW2 Japanese Example
+------------------------
+
+**Before using, make sure you have the latest model packages installed**
+
+.. code-block:: shell
+
+    apt install llm-model-whisper-tiny llm-model-silero-vad llm-model-sherpa-onnx-kws-zipformer-gigaspeech-3.3m-2024-01-01
 
 .. image:: ../images/uiflow2/whisper/uiflow2_block_1747300656108.svg
    :alt: Example image
