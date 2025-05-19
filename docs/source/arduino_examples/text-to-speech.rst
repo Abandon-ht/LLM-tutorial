@@ -1,11 +1,14 @@
 Text-to-Speech
 ==============
 
-**Before using, make sure you have the latest software packages installed**
+**Before use, please ensure that you have installed the latest software packages on ModuleLLM.**
 
 .. code-block:: shell
 
     apt install llm-melotts
+
+.. image:: ../images/arduino/text-to-speech/arduino_tts_000.png
+   :alt: Example image
 
 .. note::
 
@@ -18,11 +21,28 @@ Text-to-Speech
 MeloTTS-English Example
 -----------------------
 
-**Before using, make sure you have the latest model packages installed**
+**Before use, please ensure that you have installed the latest software packages on ModuleLLM.**
 
 .. code-block:: shell
 
     apt install llm-model-melotts-en-default
+
+.. image:: ../images/arduino/text-to-speech/arduino_tts_001.png
+   :alt: Example image
+
+Upload code
+~~~~~~~~~~~
+
+- 1. Connect the M5Stack CoreS3 or M5Stack Basic to your computer.
+- 2. Open the Arduino IDE and select the correct board and port.
+
+.. image:: ../images/arduino/text-to-speech/arduino_tts_003.png
+   :alt: Example image
+
+.. image:: ../images/arduino/text-to-speech/arduino_tts_004.png
+   :alt: Example image
+
+- 3. Copy and paste the following code into the Arduino IDE.
 
 .. code-block:: cpp
 
@@ -119,31 +139,77 @@ MeloTTS-English Example
         delay(20);
     }
 
+- 4. Upload the code to the M5Stack CoreS3 or M5Stack Basic.
+
+.. image:: ../images/arduino/text-to-speech/arduino_tts_005.png
+   :alt: Example image
+
+- 5. Open the Serial Monitor in the Arduino IDE and set the baud rate to 115200.
+
+.. image:: ../images/arduino/text-to-speech/arduino_tts_006.png
+   :alt: Example image
+
+- 6. Type a text in the Serial Monitor and press Enter.
+
+.. image:: ../images/arduino/text-to-speech/arduino_tts_007.png
+   :alt: Example image
+
+- 7. The M5Stack Module LLM will synthesize the text and play the audio.
+
+.. image:: ../images/arduino/text-to-speech/arduino_tts_008.png
+   :alt: Example image
+
 class ApiMelotts
 ~~~~~~~~~~~~~~~~
 
 .. code-block:: cpp
 
-        struct ApiMelottsSetupConfig_t {
-            String model              = "melotts-en-us";
-            String response_format    = "sys.pcm";
-            std::vector<String> input = {"tts.utf-8.stream"};
-            bool enoutput             = false;
-            bool enaudio              = true;
-        };
+    struct ApiMelottsSetupConfig_t {
+        String model              = "melotts-en-us";
+        String response_format    = "sys.pcm";
+        std::vector<String> input = {"tts.utf-8.stream"};
+        bool enoutput             = false;
+        bool enaudio              = true;
+    };
 
 - **model**: The model name. You can use "melotts-en-default" for English or "melotts-ja-jp" for Japanese.
 - **enoutput**: If true, the TTS module will return the base64 encoding pcm data in utf-8 format.
 - **enaudio**: If true, the TTS module will play the synthesized audio.
 
+.. code-block:: cpp
+
+    String setup(ApiMelottsSetupConfig_t config = ApiMelottsSetupConfig_t(), 
+                 String request_id = "melotts_setup",
+                 String language = "en_US");
+
+- **config**: The configuration for the TTS module. You can use the ApiMelottsSetupConfig_t struct to set the model name and other parameters.
+- **request_id**: The request ID for the setup. You can use any string as the request ID.
+- **language**: The language for the TTS module. You can use "en_US" for English or "ja_JP" for Japanese.
+- **return**: The work ID for the TTS module. You need to use this work ID for the inference function.
+
+.. code-block:: cpp
+
+    int inference(String work_id, String input, uint32_t timeout = 0, String request_id = "tts_inference");
+
+- **work_id**: The work ID for the TTS module. You need to use the work ID returned by the setup function.
+- **input**: The text to be synthesized. You can use any string as the input.
+- **timeout**: The timeout for the inference. You can use 0 for no timeout.
+- **request_id**: The request ID for the inference. You can use any string as the request ID.
+
 MeloTTS-Japanese Example
 ------------------------
 
-**Before using, make sure you have the latest model packages installed**
+**Before use, please ensure that you have installed the latest software packages on ModuleLLM.**
 
 .. code-block:: shell
 
     apt install llm-model-melotts-ja-jp
+
+.. image:: ../images/arduino/text-to-speech/arduino_tts_002.png
+   :alt: Example image
+
+Upload code
+~~~~~~~~~~~
 
 .. code-block:: cpp
 

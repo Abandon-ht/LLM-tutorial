@@ -3,20 +3,152 @@ Quickstart
 
 Getting starte with your ModuleLLM Kit. Please be sure to follow the steps below in order.
 
+Establish a connection with ModuleLLM
+-------------------------------------
+
+.. note::
+
+    The following operations require an internet connection.
+
+    Please ensure that the board is connected to the router via an Ethernet cable, and that the router has enabled DHCP service.
+
+Method 1 Serial Port (UART)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- 1. Connect the debug serial port of the Module LLM Kit in the manner shown in the image below.
+
+.. image:: images/quickstart/quickstart_007.png
+   :alt: Example image
+
+- 2. Use the **ls /dev/tty*** command to find the serial port device.
+
+.. code-block:: shell
+
+    ls /dev/tty*
+
+.. image:: images/quickstart/quickstart_012.png
+   :alt: Example image
+
+.. note::
+
+    If you are using the Windows operating system, please make sure that the driver has been installed.
+    `click here to download <https://www.wch-ic.com/downloads/ch341ser_exe.html>`_.
+
+- 3. Use the **screen /dev/ttyUSB0 115200** command to connect to the serial port device.
+
+.. code-block:: shell
+
+    screen /dev/ttyUSB0 115200
+
+.. note::
+
+    The default serial communication baud rate is 115200
+
+    The device name needs to be replaced with your board's name.
+
+.. image:: images/quickstart/quickstart_004.png
+   :alt: Example image
+
+- 4. Use the **ip a** command to obtain the board's IP address.
+
+.. code-block:: shell
+
+    ip a
+
+.. image:: images/quickstart/quickstart_005.png
+   :alt: Example image
+
+Method 2 Android Debug Bridge (ADB)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note::
+
+    If you haven't installed ADB tools, please `click here <https://developer.android.com/tools/releases/platform-tools>`_ to install first.
+    
+
+- 1. Connect the ADB debug port of the Module LLM Kit in the manner shown in the image below.
+
+.. image:: images/quickstart/quickstart_008.png
+   :alt: Example image
+
+- 2. Use the **adb devices** command to get the device list.
+
+.. code-block:: shell
+
+    adb devices
+
+.. image:: images/quickstart/quickstart_013.png
+    :alt: Example image
+
+- 3. Use the **adb shell** command to connect to the board.
+
+.. code-block:: shell
+
+    adb shell
+
+.. note::
+    If you have multiple devices connected, you can use the **adb -s <device> shell** option to specify the device.
+    
+- 4. Use the **ip a** command to obtain the board's IP address.
+
+.. code-block:: shell
+
+    ip a
+
+.. image:: images/quickstart/quickstart_006.png
+   :alt: Example image
+
+Method 3 Secure Shell (SSH)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- 1. Use the **ssh root@192.168.20.63** command to connect to the board.
+
+.. code-block:: shell
+
+    ssh root@192.168.20.63
+
+.. note::
+
+    The default password is **123456**
+
+    The IP address needs to be replaced with the IP of your board.
+
+.. image:: images/quickstart/quickstart_009.png
+   :alt: Example image
+
+.. image:: images/quickstart/quickstart_010.png
+   :alt: Example image
+
 Software Upgrade
 ----------------
 
-Before use, please to the `Software Upgrade <https://docs.m5stack.com/en/guide/llm/llm/image>`_ tutorial to add the M5Stack apt repository info and update the index.
+Download the M5Stack apt repository key and add it to the system
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. code-block:: shell
 
+    wget -qO /etc/apt/keyrings/StackFlow.gpg https://repo.llm.m5stack.com/m5stack-apt-repo/key/StackFlow.gpg
+    echo 'deb [arch=arm64 signed-by=/etc/apt/keyrings/StackFlow.gpg] https://repo.llm.m5stack.com/m5stack-apt-repo jammy ax630c' > /etc/apt/sources.list.d/StackFlow.list
+
+
+.. image:: images/quickstart/quickstart_011.png
+   :alt: Example image
 
 Get a list of available software
---------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: shell
 
     apt update
 
+.. image:: images/quickstart/quickstart_000.png
+   :alt: Example image
+
+.. code-block:: shell
+
     apt list | grep llm
+
+.. image:: images/quickstart/quickstart_001.png
+   :alt: Example image
 
 .. code-block:: shell
 
@@ -41,11 +173,14 @@ Get a list of available software
     llm-yolo/stable 1.8 arm64 [upgradable from: 1.3]
 
 Get a list of available model
------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: shell
 
     apt list | grep llm-model
+
+.. image:: images/quickstart/quickstart_002.png
+   :alt: Example image
 
 .. code-block:: shell
 
@@ -89,8 +224,34 @@ Get a list of available model
     llm-model-yolo11n/stable,now 0.2 arm64 [installed]
 
 Update the latest software package
-----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: shell
 
     apt install lib-llm llm-sys
+
+.. image:: images/quickstart/quickstart_003.png
+   :alt: Example image
+
+.. code-block:: shell
+
+    root@m5stack-LLM:~# apt install lib-llm llm-sys
+    Reading package lists... Done
+    Building dependency tree... Done
+    Reading state information... Done
+    Reinstallation of lib-llm is not possible, it cannot be downloaded.
+    The following packages will be upgraded:
+    llm-sys
+    1 upgraded, 0 newly installed, 0 to remove and 161 not upgraded.
+    Need to get 377 kB of archives.
+    After this operation, 0 B of additional disk space will be used.
+    Do you want to continue? [Y/n] y
+    Get:1 https://repo.llm.m5stack.com/m5stack-apt-repo jammy/ax630c arm64 llm-sys arm64 1.6 [377 kB]
+    Fetched 377 kB in 2s (224 kB/s)  
+    debconf: delaying package configuration, since apt-utils is not installed
+    (Reading database ... 60311 files and directories currently installed.)
+    Preparing to unpack .../archives/llm-sys_1.6_arm64.deb ...
+    Removed /etc/systemd/system/multi-user.target.wants/llm-sys.service.
+    Unpacking llm-sys (1.6) over (1.6) ...
+    Setting up llm-sys (1.6) ...
+    Created symlink /etc/systemd/system/multi-user.target.wants/llm-sys.service → /lib/systemd/system/llm-sys.service.
