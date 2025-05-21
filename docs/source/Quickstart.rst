@@ -1,7 +1,7 @@
 Quickstart
 ==========
 
-Getting starte with your ModuleLLM Kit. Please be sure to follow the steps below in order.
+Getting started with your ModuleLLM Kit. Please be sure to follow the steps below in order.
 
 Establish a connection with ModuleLLM
 -------------------------------------
@@ -14,6 +14,9 @@ Establish a connection with ModuleLLM
 
 Method 1 Serial Port (UART)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For Linux host computer
+^^^^^^^^^^^^^^^^^^^^^^^
 
 - 1. Connect the debug serial port of the Module LLM Kit in the manner shown in the image below.
 
@@ -29,10 +32,7 @@ Method 1 Serial Port (UART)
 .. image:: images/quickstart/quickstart_012.png
    :alt: Example image
 
-.. note::
 
-    If you are using the Windows operating system, please make sure that the driver has been installed.
-    `click here to download <https://www.wch-ic.com/downloads/ch341ser_exe.html>`_.
 
 - 3. Use the **screen /dev/ttyUSB0 115200** command to connect to the serial port device.
 
@@ -58,14 +58,52 @@ Method 1 Serial Port (UART)
 .. image:: images/quickstart/quickstart_005.png
    :alt: Example image
 
-Method 2 Android Debug Bridge (ADB)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For Windows host computer
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. note::
 
-    If you haven't installed ADB tools, please `click here <https://developer.android.com/tools/releases/platform-tools>`_ to install first.
-    
+    Please make sure that the driver has been installed.
+    `click here to download <https://www.wch-ic.com/downloads/ch341ser_exe.html>`_.
 
+- 1. Connect the debug serial port of the Module LLM Kit in the manner shown in the image below.
+
+.. image:: images/quickstart/quickstart_007.png
+   :alt: Example image
+
+- 2. Open device manager and find the serial port device.
+
+.. image:: images/quickstart/quickstart_014.png
+   :alt: Example image
+
+- 3. Use the **PuTTY** software to connect to the serial port device.
+
+.. image:: images/quickstart/quickstart_015.png
+   :alt: Example image
+
+- 4. Use the **ip a** command to obtain the board's IP address.
+
+.. image:: images/quickstart/quickstart_016.png
+   :alt: Example image
+
+Method 2 Android Debug Bridge (ADB)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For Linux host computer
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. note::
+
+    If you haven't installed ADB tools, please use **sudo apt install adb** command to install first.
+
+    The first time you use it, you need to execute the following command.
+
+    .. code-block:: shell
+
+        sudo sh -c 'echo "SUBSYSTEM==\"usb\", ATTR{idVendor}==\"32c9\", ATTR{idProduct}==\"2003\", GROUP=\"plugdev\", MODE=\"0660\"" > /etc/udev/rules.d/51-android.rules'
+        sudo udevadm control --reload-rules
+        sudo udevadm trigger
+    
 - 1. Connect the ADB debug port of the Module LLM Kit in the manner shown in the image below.
 
 .. image:: images/quickstart/quickstart_008.png
@@ -98,8 +136,50 @@ Method 2 Android Debug Bridge (ADB)
 .. image:: images/quickstart/quickstart_006.png
    :alt: Example image
 
+For Windows host computer
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. note::
+
+    If you haven't installed ADB tools, please `click here <https://developer.android.com/tools/releases/platform-tools>`_ to install first.
+
+- 1. Connect the ADB debug port of the Module LLM Kit in the manner shown in the image below.
+
+.. image:: images/quickstart/quickstart_008.png
+   :alt: Example image
+
+- 2. Use the **adb devices** command to get the device list.
+
+.. code-block:: shell
+
+    adb devices
+
+.. image:: images/quickstart/quickstart_017.png
+   :alt: Example image
+
+- 3. Use the **adb shell** command to connect to the board.
+
+.. code-block:: shell
+
+    adb shell
+
+.. image:: images/quickstart/quickstart_018.png
+   :alt: Example image
+
+- 4. Use the **ip a** command to obtain the board's IP address.
+
+.. code-block:: shell
+
+    ip a
+
+.. image:: images/quickstart/quickstart_019.png
+   :alt: Example image
+
 Method 3 Secure Shell (SSH)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For Linux host computer
+^^^^^^^^^^^^^^^^^^^^^^^
 
 - 1. Use the **ssh root@192.168.20.63** command to connect to the board.
 
@@ -117,6 +197,24 @@ Method 3 Secure Shell (SSH)
    :alt: Example image
 
 .. image:: images/quickstart/quickstart_010.png
+   :alt: Example image
+
+For Windows host computer
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- 1. Use the **ssh root@192.168.20.63** command to connect to the board.
+
+.. code-block:: shell
+
+    ssh root@192.168.20.74
+
+.. note::
+
+    The default password is **123456**
+
+    The IP address needs to be replaced with the IP of your board.
+    
+.. image:: images/quickstart/quickstart_020.png
    :alt: Example image
 
 Software Upgrade
@@ -150,6 +248,9 @@ Get a list of available software
 .. image:: images/quickstart/quickstart_001.png
    :alt: Example image
 
+Output list
+^^^^^^^^^^^
+
 .. code-block:: shell
 
     llm-asr/stable,now 1.6 arm64 [installed]
@@ -181,6 +282,9 @@ Get a list of available model
 
 .. image:: images/quickstart/quickstart_002.png
    :alt: Example image
+
+Output list
+^^^^^^^^^^^
 
 .. code-block:: shell
 
@@ -233,6 +337,9 @@ Update the latest software package
 .. image:: images/quickstart/quickstart_003.png
    :alt: Example image
 
+Output list
+^^^^^^^^^^^
+
 .. code-block:: shell
 
     root@m5stack-LLM:~# apt install lib-llm llm-sys
@@ -255,3 +362,60 @@ Update the latest software package
     Unpacking llm-sys (1.6) over (1.6) ...
     Setting up llm-sys (1.6) ...
     Created symlink /etc/systemd/system/multi-user.target.wants/llm-sys.service → /lib/systemd/system/llm-sys.service.
+
+SD Card Upgrade
+---------------
+
+For Linux host computer
+~~~~~~~~~~~~~~~~~~~~~~~
+
+- 1. Prepare a 16GB or larger SD card and format it to FAT32.
+
+.. image:: images/quickstart/quickstart_021.png
+   :alt: Example image
+
+- 2. Download the latest software packages and :doc:`model packages <Models>` from the official website.
+
+.. image:: images/quickstart/quickstart_022.png
+   :alt: Example image
+
+- 3. Create a new file named **m5stack_update.config**, and write the name of the software package into it.
+
+.. image:: images/quickstart/quickstart_023.png
+   :alt: Example image
+
+- 4. Insert the SD card into the MLLModule KIT.
+
+.. image:: images/quickstart/quickstart_024.gif
+   :alt: Example image
+
+.. note::
+
+    During the upgrade process, the LED will flash blue. It will turn green if the upgrade is successful, or red if it fails. You can check the upgrade log in the **m5stack_update.config.update.log** file.
+
+For Windows host computer
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- 1. Prepare a 16GB or larger SD card and format it to FAT32.
+
+.. image:: images/quickstart/quickstart_025.png
+   :alt: Example image
+
+- 2. Download the latest software packages and :doc:`model packages <Models>` from the official website.
+
+.. image:: images/quickstart/quickstart_026.png
+   :alt: Example image
+
+- 3. Create a new file named **m5stack_update.config**, and write the name of the software package into it.
+
+.. image:: images/quickstart/quickstart_027.png
+   :alt: Example image
+
+- 4. Insert the SD card into the MLLModule KIT.
+
+.. image:: images/quickstart/quickstart_024.gif
+   :alt: Example image
+
+.. note::
+
+    During the upgrade process, the LED will flash blue. It will turn green if the upgrade is successful, or red if it fails. You can check the upgrade log in the **m5stack_update.config.update.log** file.
