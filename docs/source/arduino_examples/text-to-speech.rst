@@ -1,7 +1,17 @@
 Text-to-Speech
 ==============
 
+This example is for the M5Stack Module LLM. It requires the M5Stack Module LLM to be connected to the M5Stack CoreS3 or M5Stack Basic.
+
+The example demonstrates how to use the M5ModuleLLM library to send a text to the LLM module and play synthesized audio.
+
+The example uses the USB serial port for communication. You can use any serial terminal program to send text to the module.
+
 **Before use, please ensure that you have installed the latest software packages on ModuleLLM.**
+
+.. tip::
+
+    Need help getting started? :ref:`View the tutorial <quickstart-software-upgrade>`.
 
 .. code-block:: shell
 
@@ -9,14 +19,6 @@ Text-to-Speech
 
 .. image:: ../images/arduino/text-to-speech/arduino_tts_000.png
    :alt: Example image
-
-.. note::
-
-    This example is for the M5Stack Module LLM. It requires the M5Stack Module LLM to be connected to the M5Stack CoreS3 or M5Stack Basic.
-
-    The example demonstrates how to use the M5ModuleLLM library to send a text to the LLM module and play synthesized audio.
-
-    The example uses the USB serial port for communication. You can use any serial terminal program to send text to the module.
 
 MeloTTS-English Example
 -----------------------

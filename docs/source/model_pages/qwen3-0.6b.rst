@@ -40,3 +40,5 @@ Install
 .. code-block:: shell
 
     apt install llm-model-qwen3-0.6b-ax630c
+
+**Manual installation:** `Click here to download llm-model-qwen3-0.6b-ax630c <https://repo.llm.m5stack.com/m5stack-apt-repo/pool/jammy/ax630c/v0.4/llm-model-qwen3-0.6B-ax630c_0.4-m5stack1_arm64.deb>`_

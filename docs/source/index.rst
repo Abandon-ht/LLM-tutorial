@@ -17,6 +17,7 @@ Check out the `Module LLM Kit <https://docs.m5stack.com/en/module/Module%20LLM%2
 
    Overview
    Quickstart
+   Software
    Models
    Python
    Arduino

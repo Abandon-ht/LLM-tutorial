@@ -20,3 +20,5 @@ melotts-ja-jp
 .. code-block:: shell
 
     apt install llm-model-melotts-ja-jp
+
+**Manual installation:** `Click here to download llm-model-melotts-ja-jp <https://repo.llm.m5stack.com/m5stack-apt-repo/pool/jammy/ax630c/v0.5/llm-model-melotts-ja-jp_0.5-m5stack1_arm64.deb>`_

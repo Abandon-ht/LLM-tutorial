@@ -44,6 +44,8 @@ Install
 
     apt install llm-model-qwen2.5-0.5b-prefill-20e
 
+**Manual installation:** `Click here to download llm-model-qwen2.5-0.5b-prefill-20e <https://repo.llm.m5stack.com/m5stack-apt-repo/pool/jammy/ax630c/v0.2/llm-model-qwen2.5-0.5B-prefill-20e_0.2-m5stack1_arm64.deb>`_
+
 Long-Context Model
 ~~~~~~~~~~~~~~~~~~
 
@@ -69,6 +71,8 @@ Install
 
     apt install llm-model-qwen2.5-0.5b-p256-ax630c
 
+**Manual installation:** `Click here to download llm-model-qwen2.5-0.5b-p256-ax630c <https://repo.llm.m5stack.com/m5stack-apt-repo/pool/jammy/ax630c/v0.4/llm-model-qwen2.5-0.5B-p256-ax630c_0.4-m5stack1_arm64.deb>`_
+
 INT4 Quantized Model
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -93,3 +97,5 @@ Install
 .. code-block:: shell
 
     apt install llm-model-qwen2.5-0.5b-int4-ax630c
+
+**Manual installation:** `Click here to download llm-model-qwen2.5-0.5b-int4-ax630c <https://repo.llm.m5stack.com/m5stack-apt-repo/pool/jammy/ax630c/v0.4/llm-model-qwen2.5-0.5B-Int4-ax630c_0.4-m5stack1_arm64.deb>`_

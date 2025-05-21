@@ -26,3 +26,5 @@ Install
 .. code-block:: shell
 
     apt install llm-model-whisper-small
+
+**Manual installation:** `Click here to download llm-model-whisper-small <https://repo.llm.m5stack.com/m5stack-apt-repo/pool/jammy/ax630c/v0.4/llm-model-whisper-small_0.4-m5stack1_arm64.deb>`_

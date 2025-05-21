@@ -64,7 +64,7 @@ For Windows host computer
 .. note::
 
     Please make sure that the driver has been installed.
-    `click here to download <https://www.wch-ic.com/downloads/ch341ser_exe.html>`_.
+    `Click here to download <https://www.wch-ic.com/downloads/ch341ser_exe.html>`_.
 
 - 1. Connect the debug serial port of the Module LLM Kit in the manner shown in the image below.
 
@@ -217,11 +217,18 @@ For Windows host computer
 .. image:: images/quickstart/quickstart_020.png
    :alt: Example image
 
+.. _quickstart-software-upgrade:
+
 Software Upgrade
 ----------------
 
 Download the M5Stack apt repository key and add it to the system
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note::
+
+   This step needs to be performed only once.
+
 .. code-block:: shell
 
     wget -qO /etc/apt/keyrings/StackFlow.gpg https://repo.llm.m5stack.com/m5stack-apt-repo/key/StackFlow.gpg
@@ -374,7 +381,11 @@ For Linux host computer
 .. image:: images/quickstart/quickstart_021.png
    :alt: Example image
 
-- 2. Download the latest software packages and :doc:`model packages <Models>` from the official website.
+- 2. Download the latest :doc:`software packages <Software>` and :doc:`model packages <Models>` from the official website.
+
+.. note::
+
+   Always include the latest versions of the **lib-llm** and **llm-sys** packages when performing an upgrade.
 
 .. image:: images/quickstart/quickstart_022.png
    :alt: Example image
@@ -401,7 +412,11 @@ For Windows host computer
 .. image:: images/quickstart/quickstart_025.png
    :alt: Example image
 
-- 2. Download the latest software packages and :doc:`model packages <Models>` from the official website.
+- 2. Download the latest :doc:`software packages <Software>` and :doc:`model packages <Models>` from the official website.
+
+.. note::
+
+   Always include the latest versions of the **lib-llm** and **llm-sys** packages when performing an upgrade.
 
 .. image:: images/quickstart/quickstart_026.png
    :alt: Example image

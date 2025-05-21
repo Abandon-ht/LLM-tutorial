@@ -22,3 +22,5 @@ melotts-zh-cn
 .. code-block:: shell
 
     apt install llm-model-melotts-zh-cn
+
+**Manual installation:** `Click here to download llm-model-melotts-zh-cn <https://repo.llm.m5stack.com/m5stack-apt-repo/pool/jammy/ax630c/v0.4/llm-model-melotts-zh-cn_0.4-m5stack1_arm64.deb>`_

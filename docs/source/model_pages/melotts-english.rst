@@ -37,3 +37,5 @@ melotts-en-us
 .. code-block:: shell
 
     apt install llm-model-melotts-en-default
+
+**Manual installation:** `Click here to download llm-model-melotts-en-default <https://repo.llm.m5stack.com/m5stack-apt-repo/pool/jammy/ax630c/v0.5/llm-model-melotts-en-default_0.5-m5stack1_arm64.deb>`_

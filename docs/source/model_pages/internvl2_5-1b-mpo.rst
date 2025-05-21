@@ -37,3 +37,5 @@ Install
 .. code-block:: shell
 
     apt install llm-model-internvl2.5-1b-364-ax630c
+
+**Manual installation:** `Click here to download llm-model-internvl2.5-1b-364-ax630c <https://repo.llm.m5stack.com/m5stack-apt-repo/pool/jammy/ax630c/v0.4/llm-model-internvl2.5-1B-364-ax630c_0.4-m5stack1_arm64.deb>`_

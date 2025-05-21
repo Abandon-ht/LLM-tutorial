@@ -37,3 +37,5 @@ Install
 .. code-block:: shell
 
     apt install llm-model-qwen2.5-coder-0.5b-ax630c
+
+**Manual installation:** `Click here to download llm-model-qwen2.5-coder-0.5b-ax630c <https://repo.llm.m5stack.com/m5stack-apt-repo/pool/jammy/ax630c/v0.2/llm-model-qwen2.5-coder-0.5B-ax630c_0.2-m5stack1_arm64.deb>`_

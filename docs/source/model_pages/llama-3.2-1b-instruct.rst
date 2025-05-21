@@ -36,6 +36,8 @@ Install
 
     apt install llm-model-llama3.2-1b-prefill-ax630c
 
+**Manual installation:** `Click here to download llm-model-llama3.2-1b-prefill-ax630c <https://repo.llm.m5stack.com/m5stack-apt-repo/pool/jammy/ax630c/v0.2/llm-model-llama3.2-1B-prefill-ax630c_0.2-m5stack1_arm64.deb>`_
+
 Long-Context Model
 ~~~~~~~~~~~~~~~~~~
 
@@ -60,3 +62,5 @@ Install
 .. code-block:: shell
 
     apt install llm-model-llama3.2-1b-p256-ax630c
+
+**Manual installation:** `Click here to download llm-model-llama3.2-1b-p256-ax630c <https://repo.llm.m5stack.com/m5stack-apt-repo/pool/jammy/ax630c/v0.4/llm-model-llama3.2-1B-p256-ax630c_0.4-m5stack1_arm64.deb>`_
