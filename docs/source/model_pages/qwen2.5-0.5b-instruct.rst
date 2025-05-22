@@ -22,6 +22,8 @@ Available NPU Models
 Base Model
 ~~~~~~~~~~
 
+.. _qwen2.5-0.5b-prefill-20e:
+
 qwen2.5-0.5B-prefill-20e
 ^^^^^^^^^^^^^^^^^^^^^^^^
 

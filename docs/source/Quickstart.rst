@@ -6,7 +6,7 @@ Getting started with your ModuleLLM Kit. Please be sure to follow the steps belo
 Establish a connection with ModuleLLM
 -------------------------------------
 
-.. note::
+.. warning::
 
     The following operations require an internet connection.
 

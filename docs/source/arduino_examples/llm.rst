@@ -1,19 +1,21 @@
 Large Language Model
 ====================
 
+This example is for the M5Stack Module LLM. It requires the M5Stack Module LLM to be connected to the M5Stack CoreS3, Core2 or Basic.
+
+The example demonstrates how to use the M5ModuleLLM library to send a question to the LLM module and receive a response.
+
+The example uses the USB serial port for communication. You can use any serial terminal program to send questions to the module.
+
 **Before using, make sure you have the latest software packages installed**
+
+.. tip::
+
+    Need help getting started? :ref:`View the tutorial <quickstart-software-upgrade>`.
 
 .. code-block:: shell
 
     apt install llm-llm
-
-.. note::
-
-    This example is for the M5Stack Module LLM. It requires the M5Stack Module LLM to be connected to the M5Stack CoreS3 or M5Stack Basic.
-
-    The example demonstrates how to use the M5ModuleLLM library to send a question to the LLM module and receive a response.
-
-    The example uses the USB serial port for communication. You can use any serial terminal program to send questions to the module.
 
 English Example
 ---------------
@@ -23,6 +25,10 @@ English Example
 .. code-block:: shell
 
     apt install llm-model-qwen2.5-0.5b-prefill-20e
+
+.. tip::
+
+    For more information about this model :ref:`see the details <qwen2.5-0.5b-prefill-20e>`.
 
 .. code-block:: cpp
 
@@ -154,6 +160,10 @@ Japanese Example
 .. code-block:: shell
 
     apt install llm-model-qwen2.5-0.5b-prefill-20e
+
+.. tip::
+
+    For more information about this model :ref:`see the details <qwen2.5-0.5b-prefill-20e>`.
 
 .. code-block:: cpp
 

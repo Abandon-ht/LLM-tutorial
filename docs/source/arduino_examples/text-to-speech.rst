@@ -1,7 +1,7 @@
 Text-to-Speech
 ==============
 
-This example is for the M5Stack Module LLM. It requires the M5Stack Module LLM to be connected to the M5Stack CoreS3 or M5Stack Basic.
+This example is for the M5Stack Module LLM. It requires the M5Stack Module LLM to be connected to the M5Stack CoreS3, Core2 or Basic.
 
 The example demonstrates how to use the M5ModuleLLM library to send a text to the LLM module and play synthesized audio.
 

@@ -1,26 +1,32 @@
 whisper
 =======
 
-**Before using, make sure you have the latest software packages installed**
+This example is for the M5Stack Module LLM. It requires the M5Stack Module LLM to be connected to the M5Stack CoreS3, Core2 or Basic.
+
+The example demonstrates how to use the M5ModuleLLM library to perform keyword spotting (KWS), voice activity detection (VAD), and automatic speech recognition (ASR) using the Whisper model.
+
+**Before using, make sure you have the latest software packages installed on ModuleLLM.**
+
+.. tip::
+
+    Need help getting started? :ref:`View the tutorial <quickstart-software-upgrade>`.
 
 .. code-block:: shell
 
     apt install llm-whisper llm-kws llm-vad
 
-.. note::
-    
-    This example is for the M5Stack Module LLM. It requires the M5Stack Module LLM to be connected to the M5Stack CoreS3 or M5Stack Basic.
-
-    The example demonstrates how to use the M5ModuleLLM library to perform keyword spotting (KWS), voice activity detection (VAD), and automatic speech recognition (ASR) using the Whisper model.
-
 English Example
 ^^^^^^^^^^^^^^^
 
-**Before using, make sure you have the latest model packages installed**
+**Before using, make sure you have the latest model packages installed on ModuleLLM.**
 
 .. code-block:: shell
 
     apt install llm-model-whisper-tiny llm-model-silero-vad llm-model-sherpa-onnx-kws-zipformer-gigaspeech-3.3m-2024-01-01
+
+.. tip::
+
+    For more information about this model :ref:`see the details <whisper-tiny>`.
 
 .. code-block:: cpp
 
@@ -132,11 +138,15 @@ English Example
 class ApiWhisper
 ~~~~~~~~~~~~~~~~
 
-**Before using, make sure you have the latest model packages installed**
+**Before using, make sure you have the latest model packages installed on ModuleLLM.**
 
 .. code-block:: shell
 
     apt install llm-model-whisper-tiny llm-model-silero-vad llm-model-sherpa-onnx-kws-zipformer-gigaspeech-3.3m-2024-01-01
+
+.. tip::
+
+    For more information about this model :ref:`see the details <whisper-tiny>`.
 
 .. code-block:: cpp
 

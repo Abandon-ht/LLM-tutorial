@@ -1,17 +1,20 @@
 Voice Assistant
 ===============
 
+This example is for the M5Stack Module LLM. It requires the M5Stack Module LLM to be connected to the M5Stack CoreS3, Core2 or Basic.
+
+The example demonstrates how to use the M5ModuleLLM library to implement a voice assistant.
+
 **Before using, make sure you have the latest software packages installed**
+
+
+.. tip::
+
+    Need help getting started? :ref:`View the tutorial <quickstart-software-upgrade>`.
 
 .. code-block:: shell
 
     apt install llm-whisper llm-kws llm-vad llm-llm llm-melotts
-
-.. note::
-
-    This example is for the M5Stack Module LLM. It requires the M5Stack Module LLM to be connected to the M5Stack CoreS3 or M5Stack Basic.
-
-    The example demonstrates how to use the M5ModuleLLM library to implement a voice assistant.
 
 English Example
 ---------------
