@@ -14,6 +14,8 @@ Available NPU Models
 Default Speaker Model
 ~~~~~~~~~~~~~~~~~~~~~
 
+.. _melotts-en-default:
+
 melotts-en-default
 ^^^^^^^^^^^^^^^^^^
 

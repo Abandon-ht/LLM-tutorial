@@ -12,6 +12,8 @@ Available NPU Models
 Japanese model
 ~~~~~~~~~~~~~~
 
+.. _melotts-ja-jp:
+
 melotts-ja-jp
 ^^^^^^^^^^^^^
 

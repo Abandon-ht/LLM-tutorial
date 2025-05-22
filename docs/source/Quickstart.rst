@@ -33,7 +33,7 @@ For Windows host computer
 .. image:: images/quickstart/quickstart_014.png
    :alt: Example image
 
-- 3. Use the **PuTTY** software to connect to the serial port device.
+- 3. Use the **PuTTY** software to connect to the serial port device. `Click here to download PuTTY <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>`_.
 
 .. image:: images/quickstart/quickstart_015.png
    :alt: Example image
@@ -133,7 +133,7 @@ For Windows host computer
 
 .. note::
 
-    If you haven't installed ADB tools, please `click here <https://developer.android.com/tools/releases/platform-tools>`_ to install first.
+    If you haven't installed ADB tools, please :ref:`View the tutorial <Windows-install-adb>` to install first.
 
 - 1. Connect the ADB debug port of the Module LLM Kit in the manner shown in the image below.
 
@@ -172,7 +172,7 @@ For Mac host computer
 
 .. note::
 
-    If you haven't installed ADB tools, please `click here <https://developer.android.com/tools/releases/platform-tools>`_ to install first.
+    If you haven't installed ADB tools, please :ref:`View the tutorial <macOS-install-adb>` to install first.
 
 - 1. Connect the ADB debug port of the Module LLM Kit in the manner shown in the image below.
 
@@ -211,7 +211,7 @@ For Linux host computer
 
 .. note::
 
-    If you haven't installed ADB tools, please use **sudo apt install adb** command to install first.
+    If you haven't installed ADB tools, please :ref:`View the tutorial <Linux-install-adb>` to install first.
 
     The first time you use it, you need to execute the following command.
 
@@ -564,3 +564,110 @@ For Linux host computer
 .. note::
 
     During the upgrade process, the LED will flash blue. It will turn green if the upgrade is successful, or red if it fails. You can check the upgrade log in the **m5stack_update.config.update.log** file.
+
+Appendix
+--------
+
+Install ADB
+~~~~~~~~~~~
+
+.. _Windows-install-adb:
+
+For Windows host computer
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- 1. Download the ADB driver. `Click here to download ADB <https://developer.android.com/tools/releases/platform-tools>`_.
+   
+.. image:: images/quickstart/quickstart_039.png
+   :alt: Example image
+
+- 2. Unzip the downloaded file and copy the **platform-tools** path.
+
+.. image:: images/quickstart/quickstart_040.png
+   :alt: Example image
+
+- 3. Open the **Setting** window and select **System**. Select **About** and click on **Advanced system settings**.
+
+.. image:: images/quickstart/quickstart_041.png
+   :alt: Example image
+
+- 4. Open the **Environment Variables** window and add the **platform-tools** path to the **Path** variable.
+
+.. image:: images/quickstart/quickstart_042.png
+   :alt: Example image
+
+
+.. image:: images/quickstart/quickstart_043.png
+   :alt: Example image
+
+.. image:: images/quickstart/quickstart_044.png
+   :alt: Example image
+
+.. _macOS-install-adb:
+
+For Mac host computer
+^^^^^^^^^^^^^^^^^^^^^
+
+- 1. Download the ADB driver. `Click here to download ADB <https://developer.android.com/tools/releases/platform-tools>`_.
+
+.. image:: images/quickstart/quickstart_045.png
+   :alt: Example image
+
+- 2. Open the **Terminal** and use the **cd** command to navigate to the **Downloads** directory.
+
+.. code-block:: shell
+   
+    cd ~/Downloads
+
+.. image:: images/quickstart/quickstart_046.png
+   :alt: Example image
+
+- 3. Use the **mkdir -p ~/.android-sdk-macosx** command to create a new directory.
+
+.. code-block:: shell
+
+    mkdir -p ~/.android-sdk-macosx
+
+.. image:: images/quickstart/quickstart_048.png
+   :alt: Example image
+
+- 4. Use the **mv platform-tools ~/.android-sdk-macosx** command to move the **platform-tools** directory to the new directory.
+
+.. code-block:: shell
+
+    mv platform-tools ~/.android-sdk-macosx
+
+.. image:: images/quickstart/quickstart_049.png
+   :alt: Example image
+
+- 5. Use the **echo 'export PATH=$PATH:~/.android-sdk-macosx/platform-tools' >> ~/.zshrc** command to add the **platform-tools** directory to the system path.
+
+.. code-block:: shell
+
+    echo 'export PATH=$PATH:~/.android-sdk-macosx/platform-tools' >> ~/.zshrc
+
+.. image:: images/quickstart/quickstart_050.png
+   :alt: Example image
+
+- 6. Use the **source ~/.zshrc** command to refresh the system path.
+
+.. code-block:: shell
+
+    source ~/.zshrc
+
+.. image:: images/quickstart/quickstart_051.png
+   :alt: Example image
+
+.. _Linux-install-adb:
+
+For Linux host computer
+^^^^^^^^^^^^^^^^^^^^^^^
+
+- 1. Open the **Terminal** and use the **sudo apt install google-android-platform-tools-installer** command to install the ADB driver.
+
+.. code-block:: shell
+
+    sudo apt install google-android-platform-tools-installer
+
+.. image:: images/quickstart/quickstart_052.png
+   :alt: Example image

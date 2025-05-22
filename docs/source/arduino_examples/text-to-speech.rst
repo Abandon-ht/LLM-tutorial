@@ -29,13 +29,23 @@ MeloTTS-English Example
 
     apt install llm-model-melotts-en-default
 
+.. tip::
+
+    For more information about this model :ref:`see the details <melotts-en-default>`.
+
 .. image:: ../images/arduino/text-to-speech/arduino_tts_001.png
    :alt: Example image
+
+.. _Upload code:
 
 Upload code
 ~~~~~~~~~~~
 
 - 1. Connect the M5Stack CoreS3 or M5Stack Basic to your computer.
+
+.. image:: ../images/arduino/text-to-speech/arduino_tts_010.png
+   :alt: Example image
+
 - 2. Open the Arduino IDE and select the correct board and port.
 
 .. image:: ../images/arduino/text-to-speech/arduino_tts_003.png
@@ -158,7 +168,7 @@ Upload code
 
 - 7. The M5Stack Module LLM will synthesize the text and play the audio.
 
-.. image:: ../images/arduino/text-to-speech/arduino_tts_008.png
+.. image:: ../images/arduino/text-to-speech/arduino_tts_011.png
    :alt: Example image
 
 class ApiMelotts
@@ -203,6 +213,10 @@ MeloTTS-Japanese Example
 
 **Before use, please ensure that you have installed the latest software packages on ModuleLLM.**
 
+.. tip::
+
+    For more information about this model :ref:`see the details <melotts-ja-jp>`.
+
 .. code-block:: shell
 
     apt install llm-model-melotts-ja-jp
@@ -212,6 +226,10 @@ MeloTTS-Japanese Example
 
 Upload code
 ~~~~~~~~~~~
+
+.. tip::
+
+    How to use this code :ref:`View the tutorial <Upload code>`.
 
 .. code-block:: cpp
 
@@ -253,7 +271,7 @@ Upload code
         module_llm.begin(&Serial2);
 
         /* Make sure module is connected */
-        M5.Display.printf(">> Check ModuleLLM connection..\n");
+        M5.Display.printf(">> ModuleLLM 接続を確認してください。\n");
         while (1) {
             if (module_llm.checkConnection()) {
                 break;
@@ -261,15 +279,15 @@ Upload code
         }
 
         /* Reset ModuleLLM */
-        M5.Display.printf(">> Reset ModuleLLM..\n");
+        M5.Display.printf(">> ModuleLLM をリセットします。\n");
         module_llm.sys.reset();
 
         /* Setup TTS module and save returned work id */
-        M5.Display.printf(">> Initialize TTS..\n\n");
+        M5.Display.printf(">> TTS を初期化します。\n\n");
         m5_module_llm::ApiMelottsSetupConfig_t melotts_config;
         melotts_config.model = "melotts-ja-jp";
         tts_work_id          = module_llm.melotts.setup(melotts_config, "tts_setup", language);
-        M5.Display.printf(">> Initialization completed..\n\n");
+        M5.Display.printf(">> 初期化が完了しました。\n\n");
     }
 
     void loop()
@@ -308,3 +326,9 @@ Upload code
 
         delay(20);
     }
+
+.. image:: ../images/arduino/text-to-speech/arduino_tts_009.png
+   :alt: Example image
+
+.. image:: ../images/arduino/text-to-speech/arduino_tts_012.png
+   :alt: Example image
