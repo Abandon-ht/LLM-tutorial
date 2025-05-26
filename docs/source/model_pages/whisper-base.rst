@@ -1,4 +1,4 @@
-`whisper-base <https://huggingface.co/openai/whisper-base>`_
+`Whisper-base <https://huggingface.co/openai/whisper-base>`_
 ============================================================
 
 Introduction

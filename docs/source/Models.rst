@@ -42,6 +42,35 @@ Model that can transcribe and translate audio into text.
 - :doc:`Whisper-base </model_pages/whisper-base>`
 - :doc:`Whisper-small </model_pages/whisper-small>`
 
+Keyword spotting
+----------------
+
+Models that can detect specific keywords in audio streams.
+
+- :doc:`Keyword spotting </model_pages/kws>`
+
+Voice activity detection
+------------------------
+
+Models that can detect whether there is speech in an audio stream.
+
+- :doc:`Silero-vad </model_pages/silero-vad>`
+
+Automatic Speech Recognition
+----------------------------
+
+Models that can convert spoken language into text.
+
+- :doc:`Automatic Speech Recognition </model_pages/asr>`
+
+Vision
+------
+
+Models that can process images and perform tasks like image classification, object detection, etc.
+
+- :doc:`Yolo11n </model_pages/yolo>`
+- :doc:`Depth-Anything-V2 </model_pages/depthanything>`
+
 Model Pages
 -----------
 
@@ -67,3 +96,8 @@ Model Pages
    /model_pages/whisper-tiny
    /model_pages/whisper-base
    /model_pages/whisper-small
+   /model_pages/yolo
+   /model_pages/depthanything
+   /model_pages/kws
+   /model_pages/silero-vad
+   /model_pages/asr

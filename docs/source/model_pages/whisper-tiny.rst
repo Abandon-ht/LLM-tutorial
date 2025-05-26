@@ -1,4 +1,4 @@
-`whisper-tiny <https://huggingface.co/openai/whisper-tiny>`_
+`Whisper-tiny <https://huggingface.co/openai/whisper-tiny>`_
 ============================================================
 
 Introduction
