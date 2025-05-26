@@ -16,7 +16,7 @@ llm-model-sherpa-ncnn-streaming-zipformer-20m-2023-02-17
 
 - This model is a streaming ASR model based on the Zipformer architecture, trained on a large dataset to provide accurate speech recognition capabilities.
 
-- This model only supports English.
+- This model **only supports English**.
 
 Install
 """""""""
@@ -34,7 +34,7 @@ llm-model-sherpa-ncnn-streaming-zipformer-zh-14m-2023-02-23
 
 - This model is a streaming ASR model based on the Zipformer architecture, trained on a large dataset to provide accurate speech recognition capabilities.
 
-- This model only supports Chinese.
+- This model **only supports Chinese**.
 
 Install
 """""""

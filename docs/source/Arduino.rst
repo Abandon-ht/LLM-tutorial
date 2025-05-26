@@ -33,3 +33,4 @@ Examples
    /arduino_examples/whisper
    /arduino_examples/llm
    /arduino_examples/voice_assistant
+   /arduino_examples/API-reference

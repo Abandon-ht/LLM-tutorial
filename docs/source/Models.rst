@@ -66,7 +66,7 @@ Models that can convert spoken language into text.
 Vision
 ------
 
-Models that can process images and perform tasks like image classification, object detection, etc.
+Models that can process images and perform tasks like object detection, etc.
 
 - :doc:`Yolo11n </model_pages/yolo>`
 - :doc:`Depth-Anything-V2 </model_pages/depthanything>`

@@ -16,7 +16,7 @@ llm-model-sherpa-onnx-kws-zipformer-gigaspeech-3.3m-2024-01-01
 
 - This model is trained on the GigaSpeech dataset and supports keyword spotting tasks.
 
-- This model only supports English.
+- This model **only supports English**.
 
 Install
 """""""
@@ -34,7 +34,7 @@ llm-model-sherpa-onnx-kws-zipformer-wenetspeech-3.3m-2024-01-01
 
 - This model is trained on the WenetSpeech dataset and supports keyword spotting tasks.
 
-- This model only supports Chinese.
+- This model **only supports Chinese**.
 
 Install
 """""""

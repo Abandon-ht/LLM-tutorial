@@ -134,24 +134,6 @@ English Example
         delay(20);
     }
 
-.. code-block:: cpp
-
-        struct ApiLlmSetupConfig_t {
-            String prompt;
-            String model              = "qwen2.5-0.5B-prefill-20e";
-            String response_format    = "llm.utf-8.stream";
-            std::vector<String> input = {"llm.utf-8.stream"};
-            bool enoutput             = true;
-            bool enkws                = true;
-            int max_token_len         = 127;
-            // int max_token_len      = 512;
-        };
-
-- **prompt**: The prompt for the LLM model. The prompt is used to initialize the model and can be used to set the context for the model.
-- **model**: The model name. You can use "qwen2.5-0.5B-prefill-20e" for the Qwen2.5 model.
-- **response_format**: The response format.
-- **max_token_len**: The maximum number of tokens to generate. The default is 127. You can set it to 512 for larger models.
-
 Japanese Example
 ----------------
 

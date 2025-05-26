@@ -135,33 +135,6 @@ English Example
         module_llm.msg.responseMsgList.clear();
     }
 
-class ApiWhisper
-~~~~~~~~~~~~~~~~
-
-**Before using, make sure you have the latest model packages installed on ModuleLLM.**
-
-.. code-block:: shell
-
-    apt install llm-model-whisper-tiny llm-model-silero-vad llm-model-sherpa-onnx-kws-zipformer-gigaspeech-3.3m-2024-01-01
-
-.. tip::
-
-    For more information about this model :ref:`see the details <whisper-tiny>`.
-
-.. code-block:: cpp
-
-        struct ApiWhisperSetupConfig_t {
-            String model              = "whisper-tiny";
-            String response_format    = "asr.utf-8";
-            String language           = "en";
-            std::vector<String> input = {"sys.pcm"};
-            bool enoutput             = true;
-        };
-
-- "**model**: The model name. default is "whisper-tiny". You can use "whisper-base" or "whisper-small" for larger models.
-- "**response_format** is the response format, default is "asr.utf-8". whisper only supports non-streaming response.
-- **enoutput**: If true, the Whisper module will return the transcribe text in utf-8 format.
-
 Japanese Example
 ^^^^^^^^^^^^^^^^
 .. code-block:: cpp
