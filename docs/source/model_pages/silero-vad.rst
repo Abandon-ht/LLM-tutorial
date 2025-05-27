@@ -1,6 +1,8 @@
 `Silero-vad <https://github.com/snakers4/silero-vad>`_
 ======================================================
 
+.. _vad_models:
+
 Introduction
 ------------
 

@@ -1,6 +1,8 @@
 `Depth-Anything  <https://github.com/DepthAnything/Depth-Anything-V2>`_
 =======================================================================
 
+.. _depthanything_models:
+
 Installation
 ------------
 

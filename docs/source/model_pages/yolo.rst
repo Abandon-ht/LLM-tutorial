@@ -1,6 +1,8 @@
 `Yolo11 <https://github.com/ultralytics/ultralytics>`_
 ======================================================
 
+.. _yolo_models:
+
 Introduction
 ------------
 

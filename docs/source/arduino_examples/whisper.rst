@@ -26,7 +26,7 @@ English Example
 
 .. tip::
 
-    For more information about this model :ref:`see the details <whisper-tiny>`.
+    For more information about this model :ref:`see the details <whisper-tiny_model>`.
 
 .. code-block:: cpp
 
@@ -137,6 +137,17 @@ English Example
 
 Japanese Example
 ^^^^^^^^^^^^^^^^
+
+**Before using, make sure you have the latest model packages installed on ModuleLLM.**
+
+.. code-block:: shell
+
+    apt install llm-model-whisper-tiny llm-model-silero-vad llm-model-sherpa-onnx-kws-zipformer-gigaspeech-3.3m-2024-01-01
+
+.. tip::
+
+    For more information about this model :ref:`see the details <whisper-tiny_model>`.
+
 .. code-block:: cpp
 
     /*

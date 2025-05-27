@@ -1,6 +1,8 @@
 `MeloTTS-Japanese <https://huggingface.co/myshell-ai/MeloTTS-Japanese>`_
 ========================================================================
 
+.. _melotts-ja:
+
 Introduction
 ------------
 

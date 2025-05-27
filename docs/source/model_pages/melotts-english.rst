@@ -1,6 +1,8 @@
 `MeloTTS-English <https://huggingface.co/myshell-ai/MeloTTS-English>`_
 ======================================================================
 
+.. _melotts-en:
+
 Introduction
 ------------
 

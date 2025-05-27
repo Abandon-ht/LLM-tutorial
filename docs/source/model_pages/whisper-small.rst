@@ -12,7 +12,7 @@ Available NPU Models
 whisper-small
 ~~~~~~~~~~~~~
 
-.. _whisper-tiny:
+.. _whisper-small_model:
 
 **Support Platforms**: LLM630 Compute Kit, Module LLM, and Module LLM Kit
 

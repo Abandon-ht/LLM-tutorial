@@ -1,6 +1,8 @@
 `MeloTTS-Chinese <https://huggingface.co/myshell-ai/MeloTTS-Chinese>`_
 ======================================================================
 
+.. _melotts-zh:
+
 Introduction
 ------------
 

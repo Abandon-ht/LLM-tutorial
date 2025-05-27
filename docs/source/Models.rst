@@ -3,11 +3,15 @@ Models
 
 Explore all available models and compare their capabilities.
 
+.. _Reasoning_models:
+
 Reasoning models
 ----------------
 
 - :doc:`Qwen3-0.6B </model_pages/qwen3-0.6b>`
 - :doc:`DeepSeek-R1-Distill-Qwen-1.5B </model_pages/deepseek-r1-distill-qwen-1.5b>`
+
+.. _Flagship_chat_models:
 
 Flagship chat models
 --------------------
@@ -18,8 +22,10 @@ Flagship chat models
 - :doc:`Llama-3.2-1B-Instruct </model_pages/llama-3.2-1b-instruct>`
 - :doc:`openbuddy-llama3.2-1b-v23.1-131k </model_pages/openbuddy-llama3.2-1b-v23.1-131k>`
 
-Multimodal Model
-----------------
+.. _Multimodal_models:
+
+Multimodal models
+-----------------
 - :doc:`InternVL2_5-1B-MPO </model_pages/internvl2_5-1b-mpo>`
 - :doc:`SmolVLM-256M-Instruct </model_pages/smoivlm-256m-instruct>`
 - :doc:`SmolVLM-500M-Instruct </model_pages/smoivlm-500m-instruct>`

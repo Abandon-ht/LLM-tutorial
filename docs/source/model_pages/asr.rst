@@ -1,6 +1,8 @@
 `Automatic Speech Recognition <https://k2-fsa.github.io/sherpa/ncnn/pretrained_models/zipformer-transucer-models.html>`_
 =========================================================================================================================
 
+.. _asr_models:
+
 Introduction
 ------------
 

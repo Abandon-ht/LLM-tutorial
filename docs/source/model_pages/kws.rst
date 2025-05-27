@@ -1,6 +1,8 @@
 `Keyword Spotting <https://k2-fsa.github.io/sherpa/onnx/kws/index.html>`_
 =========================================================================
 
+.. _kws_models:
+
 Introduction
 ------------
 
