@@ -151,6 +151,9 @@ Upload code
 .. image:: ../images/arduino/llm/arduino_llm_001.png
    :alt: Example image
 
+.. image:: ../images/arduino/llm/arduino_llm_004.png
+   :alt: Example image
+
 Japanese Example
 ----------------
 
@@ -287,4 +290,7 @@ Upload code
 - 2. Open the Serial Monitor in the Arduino IDE and set the baud rate to 115200. Type a text in the Serial Monitor and press Enter. The M5Stack Module LLM will process the input and return a response.
 
 .. image:: ../images/arduino/llm/arduino_llm_003.png
+   :alt: Example image
+
+.. image:: ../images/arduino/llm/arduino_llm_005.png
    :alt: Example image
