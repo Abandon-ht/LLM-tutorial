@@ -30,6 +30,13 @@ English Example
 
     For more information about this model :ref:`see the details <qwen2.5-0.5b-prefill-20e>`.
 
+Upload code
+~~~~~~~~~~~
+
+.. tip::
+
+    How to use this code :ref:`View the tutorial <Upload code>`.
+
 .. code-block:: cpp
 
     /*
@@ -134,6 +141,16 @@ English Example
         delay(20);
     }
 
+- 1. Upload the code to the M5Stack CoreS3 or M5Stack Basic.
+
+.. image:: ../images/arduino/llm/arduino_llm_000.png
+   :alt: Example image
+
+- 2. Open the Serial Monitor in the Arduino IDE and set the baud rate to 115200. Type a text in the Serial Monitor and press Enter. The M5Stack Module LLM will process the input and return a response.
+
+.. image:: ../images/arduino/llm/arduino_llm_001.png
+   :alt: Example image
+
 Japanese Example
 ----------------
 
@@ -146,6 +163,13 @@ Japanese Example
 .. tip::
 
     For more information about this model :ref:`see the details <qwen2.5-0.5b-prefill-20e>`.
+
+Upload code
+~~~~~~~~~~~
+
+.. tip::
+
+    How to use this code :ref:`View the tutorial <Upload code>`.
 
 .. code-block:: cpp
 
@@ -187,28 +211,28 @@ Japanese Example
         module_llm.begin(&Serial2);
 
         /* Make sure module is connected */
-        M5.Display.printf(">> Check ModuleLLM connection..\n");
+        M5.Display.printf(">> ModuleLLMの接続を確認しています。\n");
         while (1) {
             if (module_llm.checkConnection()) {
                 break;
             }
         }
 
-        /* Reset ModuleLLM */
-        M5.Display.printf(">> Reset ModuleLLM..\n");
+        /* ModuleLLMをリセット */
+        M5.Display.printf(">> ModuleLLMをリセットしています。\n");
         module_llm.sys.reset();
 
-        /* Setup LLM module and save returned work id */
-        M5.Display.printf(">> Setup llm..\n");
+        /* LLMモジュールの設定と返却されたワークIDの保存 */
+        M5.Display.printf(">> LLMを設定しています。\n");
         m5_module_llm::ApiLlmSetupConfig_t llm_config;
         llm_config.max_token_len = 1023;
         llm_work_id              = module_llm.llm.setup(llm_config);
 
-        M5.Display.printf(">> Setup finish\n");
-        M5.Display.printf(">> Try send your question via usb serial port\n");
+        M5.Display.printf(">> 設定が完了しました。\n");
+        M5.Display.printf(">> USBシリアルポート経由で質問を送信してください\n");
         M5.Display.setTextColor(TFT_GREEN);
-        M5.Display.printf("e.g. \nHi, What's your name?\n");
-        M5.Display.printf("(end with CRLF \\r\\n)\n\n");
+        M5.Display.printf("例:\nHi, What's your name?\n");
+        M5.Display.printf("(CRLF \\r\\nで終了)\n\n");
     }
 
     void loop()
@@ -254,3 +278,13 @@ Japanese Example
 
         delay(20);
     }
+
+- 1. Upload the code to the M5Stack CoreS3 or M5Stack Basic.
+
+.. image:: ../images/arduino/llm/arduino_llm_002.png
+   :alt: Example image
+
+- 2. Open the Serial Monitor in the Arduino IDE and set the baud rate to 115200. Type a text in the Serial Monitor and press Enter. The M5Stack Module LLM will process the input and return a response.
+
+.. image:: ../images/arduino/llm/arduino_llm_003.png
+   :alt: Example image

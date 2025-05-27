@@ -25,6 +25,13 @@ English Example
 
     apt install llm-model-whisper-tiny llm-model-silero-vad llm-model-sherpa-onnx-kws-zipformer-gigaspeech-3.3m-2024-01-01 llm-model-melotts-en-default
 
+Upload code
+~~~~~~~~~~~
+
+.. tip::
+
+    How to use this code :ref:`View the tutorial <Upload code>`.
+
 .. code-block:: cpp
 
     /*
@@ -75,10 +82,6 @@ English Example
         M5.Display.printf(">> Reset ModuleLLM..\n");
         module_llm.sys.reset();
 
-        /* Setup Audio module */
-        M5.Display.printf(">> Setup audio..\n");
-        module_llm.audio.setup();
-
         /* Setup KWS module and save returned work id */
         M5.Display.printf(">> Setup kws..\n");
         m5_module_llm::ApiKwsSetupConfig_t kws_config;
@@ -105,7 +108,7 @@ English Example
         m5_module_llm::ApiMelottsSetupConfig_t melotts_config;
         melotts_config.model = "melotts-en-default";
         melotts_config.input = {"tts.utf-8.stream", llm_work_id, kws_work_id};
-        melotts_work_id      = module_llm.melotts.setup(melotts_config, "melotts_setup", language);
+        melotts_work_id      = module_llm.melotts.setup(melotts_config, "melotts_setup");
 
         M5.Display.printf(">> Setup ok\n>> Say \"%s\" to wakeup\n", wake_up_keyword.c_str());
     }
@@ -156,6 +159,29 @@ English Example
         M5.Display.printf("%s", result.c_str());
     }
 
+- 1. Upload the code to the M5Stack CoreS3 or M5Stack Basic.
+
+.. image:: ../images/arduino/voice_assistant/arduino_voice_assistant_000.png
+   :alt: Example image
+
+- 2. Wait for initialization to complete and display **Say "hello" to wakeup**
+
+.. image:: ../images/arduino/voice_assistant/arduino_voice_assistant_001.png
+   :alt: Example image
+
+- 3. Say "hello" to wake up the voice assistant, It will display **keyword detected**.
+
+.. image:: ../images/arduino/voice_assistant/arduino_voice_assistant_002.png
+   :alt: Example image
+
+- 4. After the wake word is detected, you can ask questions, and the voice assistant will respond with the answer.
+
+.. image:: ../images/arduino/voice_assistant/arduino_voice_assistant_003.png
+   :alt: Example image
+
+.. image:: ../images/arduino/voice_assistant/arduino_voice_assistant_004.png
+   :alt: Example image
+
 Japanese Example
 ----------------
 
@@ -164,6 +190,13 @@ Japanese Example
 .. code-block:: shell
 
     apt install llm-model-whisper-tiny llm-model-silero-vad llm-model-sherpa-onnx-kws-zipformer-gigaspeech-3.3m-2024-01-01 llm-model-melotts-ja-jp
+
+Upload code
+~~~~~~~~~~~
+
+.. tip::
+
+    How to use this code :ref:`View the tutorial <Upload code>`.
 
 .. code-block:: cpp
 
@@ -205,7 +238,7 @@ Japanese Example
         module_llm.begin(&Serial2);
 
         /* Make sure module is connected */
-        M5.Display.printf(">> Check ModuleLLM connection..\n");
+        M5.Display.printf(">> ModuleLLM 接続を確認してください。\n");
         while (1) {
             if (module_llm.checkConnection()) {
                 break;
@@ -213,42 +246,38 @@ Japanese Example
         }
 
         /* Reset ModuleLLM */
-        M5.Display.printf(">> Reset ModuleLLM..\n");
+        M5.Display.printf(">> ModuleLLMをリセットしています。\n");
         module_llm.sys.reset();
 
-        /* Setup Audio module */
-        M5.Display.printf(">> Setup audio..\n");
-        module_llm.audio.setup();
-
         /* Setup KWS module and save returned work id */
-        M5.Display.printf(">> Setup kws..\n");
+        M5.Display.printf(">> KWSを設定しています。\n");
         m5_module_llm::ApiKwsSetupConfig_t kws_config;
         kws_config.kws = wake_up_keyword;
         kws_work_id    = module_llm.kws.setup(kws_config, "kws_setup", language);
 
         /* Setup VAD module and save returned work id */
-        M5.Display.printf(">> Setup vad..\n");
+        M5.Display.printf(">> VADを設定しています。\n");
         m5_module_llm::ApiVadSetupConfig_t vad_config;
         vad_config.input = {"sys.pcm", kws_work_id};
         vad_work_id      = module_llm.vad.setup(vad_config, "vad_setup");
 
         /* Setup Whisper module and save returned work id */
-        M5.Display.printf(">> Setup whisper..\n");
+        M5.Display.printf(">> Whisperを設定しています。\n");
         m5_module_llm::ApiWhisperSetupConfig_t whisper_config;
         whisper_config.input    = {"sys.pcm", kws_work_id, vad_work_id};
         whisper_config.language = "ja";
         whisper_work_id = module_llm.whisper.setup(whisper_config, "whisper_setup");
 
-        M5.Display.printf(">> Setup llm..\n");
+        M5.Display.printf(">> LLMを設定しています。\n");
         llm_work_id = module_llm.llm.setup();
 
-        M5.Display.printf(">> Setup melotts..\n\n");
+        M5.Display.printf(">> melottsを設定しています。\n\n");
         m5_module_llm::ApiMelottsSetupConfig_t melotts_config;
         melotts_config.model = "melotts-ja-jp";
         melotts_config.input = {"tts.utf-8.stream", llm_work_id, kws_work_id};
-        melotts_work_id      = module_llm.melotts.setup(melotts_config, "melotts_setup", language);
+        melotts_work_id      = module_llm.melotts.setup(melotts_config, "melotts_setup");
 
-        M5.Display.printf(">> Setup ok\n>> Say \"%s\" to wakeup\n", wake_up_keyword.c_str());
+        M5.Display.printf(">> 設定が完了しました。\n>> \"%s\"と発言してください", wake_up_keyword.c_str());
     }
 
     void loop()
@@ -296,3 +325,18 @@ Japanese Example
     {
         M5.Display.printf("%s", result.c_str());
     }
+
+- 1. Upload the code to the M5Stack CoreS3 or M5Stack Basic.
+
+.. image:: ../images/arduino/voice_assistant/arduino_voice_assistant_005.png
+   :alt: Example image
+
+- 2. Wait for initialization to complete and display **Say "hello" to wakeup**
+
+.. image:: ../images/arduino/voice_assistant/arduino_voice_assistant_006.png
+   :alt: Example image
+
+- 3. Say "hello" to wake up the voice assistant, It will display **keyword detected**. After the wake word is detected, you can ask questions, and the voice assistant will respond with the answer.
+
+.. image:: ../images/arduino/voice_assistant/arduino_voice_assistant_007.png
+   :alt: Example image
