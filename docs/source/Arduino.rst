@@ -22,7 +22,6 @@ Examples
 - :doc:`Voice Assistant </arduino_examples/voice_assistant>`
 
 
-
 .. toctree::
    :maxdepth: 1
    :caption: Examples Pages:
@@ -33,4 +32,16 @@ Examples
    /arduino_examples/whisper
    /arduino_examples/llm
    /arduino_examples/voice_assistant
+
+API reference
+-------------
+
+- :doc:`UiFlow API </arduino_examples/API-reference>`
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Examples Pages:
+   :titlesonly:
+   :hidden:
+
    /arduino_examples/API-reference

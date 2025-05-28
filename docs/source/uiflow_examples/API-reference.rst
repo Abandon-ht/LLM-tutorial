@@ -231,6 +231,9 @@ MeloTTS block
 Large Language Model
 --------------------
 
+Yolo block
+~~~~~~~~~~
+
 .. image:: ../images/uiflow2/api/uiflow2_block_1748402047027.svg
    :alt: Example image
 
@@ -244,6 +247,17 @@ Large Language Model
 - **enkws**: The work ID of the latest KWS module. Default is an empty string.
 - **max_token_len**: The maximum token length for the LLM response. Default is **127**.
 - **request_id**: The request ID for the setup. You can use any string as the request ID.
+
+.. image:: ../images/uiflow2/api/uiflow2_block_1748426989330.svg
+   :alt: Example image
+
+.. code-block:: python
+
+  llm_0.llm_inference(llm_0.get_latest_llm_work_id(), 'Can I ask you a question?', 'llm_inference')
+
+- **work_id**: The work ID for the LLM module. You need to use `llm_0.get_latest_llm_work_id()` to get the latest work ID.
+- **input**: The input text for the LLM. You can use any string as the input.
+- **request_id**: The request ID for the inference. You can use any string as the request ID.
 
 Vision
 ------

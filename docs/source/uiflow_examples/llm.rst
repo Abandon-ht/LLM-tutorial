@@ -26,7 +26,10 @@ UIFLOW2 Example
 
     For more information about this model :ref:`see the details <qwen2.5-0.5b-prefill-20e>`.
 
-**Click here to jump to** `text_assistant: <https://uiflow2.m5stack.com/?pkey=167c2996558d421eb8826f92d79239e6>`_ 
+**Click here to jump to** `llm demo <https://uiflow2.m5stack.com/?pkey=167c2996558d421eb8826f92d79239e6>`_ 
+
+.. image:: ../images/uiflow2/llm/uiflow2_block_1747296853251.svg
+   :alt: Example image
 
 .. image:: ../images/uiflow2/llm/uiflow2_block_1747296964450.svg
    :alt: Example image
@@ -34,10 +37,10 @@ UIFLOW2 Example
 .. image:: ../images/uiflow2/llm/uiflow2_block_1747296970644.svg
    :alt: Example image
 
-.. image:: ../images/uiflow2/llm/uiflow2_block_1747296853251.svg
+.. image:: ../images/uiflow2/llm/uiflow2_block_1747296942430.svg
    :alt: Example image
 
-.. image:: ../images/uiflow2/llm/uiflow2_block_1747296942430.svg
+.. image:: ../images/uiflow2/llm/uiflow2_llm_000.png
    :alt: Example image
 
 Micropython Example

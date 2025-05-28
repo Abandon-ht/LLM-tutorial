@@ -24,6 +24,8 @@ UIFLOW2 English Example
 
     apt install llm-model-whisper-tiny llm-model-silero-vad llm-model-sherpa-onnx-kws-zipformer-gigaspeech-3.3m-2024-01-01 llm-model-melotts-en-default
 
+**Click here to jump to** `English Voice_Assistant demo <https://uiflow2.m5stack.com/?pkey=0b9c1eaffc5a40ba9fff2e7e6b8e435f>`_ 
+
 .. image:: ../images/uiflow2/voice_assistant/uiflow2_block_1747366075777.svg
    :alt: Example image
 
@@ -102,8 +104,8 @@ Micropython English Example
         label4 = Widgets.Label("LLM output data:", 10, 140, 1.0, 0xffffff, 0x222222, Widgets.FONTS.DejaVu18)
         label1 = Widgets.Label("~", 10, 50, 1.0, 0xffffff, 0x222222, Widgets.FONTS.DejaVu18)
         label5 = Widgets.Label("~", 10, 170, 1.0, 0xffffff, 0x222222, Widgets.FONTS.DejaVu18)
-        label2 = Widgets.Label("ASR input data:", 10, 80, 1.0, 0xffffff, 0x222222, Widgets.FONTS.DejaVu18)
-        label3 = Widgets.Label("~", 10, 109, 1.0, 0xffffff, 0x222222, Widgets.FONTS.EFontJA24)
+        label2 = Widgets.Label("ASR output data:", 10, 80, 1.0, 0xffffff, 0x222222, Widgets.FONTS.DejaVu18)
+        label3 = Widgets.Label("~", 10, 108, 1.0, 0xffffff, 0x222222, Widgets.FONTS.DejaVu18)
 
         llm_0 = LlmModule(2, tx=17, rx=18)
         label1.setText(str('Wait ModuleLLM connection..'))
@@ -153,6 +155,8 @@ UIFLOW2 Japanese Example
 .. code-block:: shell
 
     apt install llm-model-whisper-tiny llm-model-silero-vad llm-model-sherpa-onnx-kws-zipformer-gigaspeech-3.3m-2024-01-01 llm-model-melotts-ja-jp
+
+**Click here to jump to** `Japanese Voice_Assistant demo <https://uiflow2.m5stack.com/?pkey=fb94879a930b4ef9b095e5ce803f9fd6>`_ 
 
 .. image:: ../images/uiflow2/voice_assistant/uiflow2_block_1747366290339.svg
    :alt: Example image
@@ -231,9 +235,9 @@ Micropython Japanese Example
         label0 = Widgets.Label("State", 10, 20, 1.0, 0xffffff, 0x222222, Widgets.FONTS.DejaVu18)
         label4 = Widgets.Label("LLM output data:", 10, 140, 1.0, 0xffffff, 0x222222, Widgets.FONTS.DejaVu18)
         label1 = Widgets.Label("~", 10, 50, 1.0, 0xffffff, 0x222222, Widgets.FONTS.DejaVu18)
-        label5 = Widgets.Label("~", 10, 170, 1.0, 0xffffff, 0x222222, Widgets.FONTS.DejaVu18)
-        label2 = Widgets.Label("ASR input data:", 10, 80, 1.0, 0xffffff, 0x222222, Widgets.FONTS.DejaVu18)
-        label3 = Widgets.Label("~", 10, 109, 1.0, 0xffffff, 0x222222, Widgets.FONTS.EFontJA24)
+        label5 = Widgets.Label("~", 10, 170, 1.0, 0xffffff, 0x222222, Widgets.FONTS.EFontJA24)
+        label2 = Widgets.Label("ASR output data:", 10, 80, 1.0, 0xffffff, 0x222222, Widgets.FONTS.DejaVu18)
+        label3 = Widgets.Label("~", 10, 108, 1.0, 0xffffff, 0x222222, Widgets.FONTS.EFontJA24)
 
         llm_0 = LlmModule(2, tx=17, rx=18)
         label1.setText(str('Wait ModuleLLM connection..'))

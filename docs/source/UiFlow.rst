@@ -20,4 +20,16 @@ Examples
    /uiflow_examples/whisper
    /uiflow_examples/llm
    /uiflow_examples/voice_assistant
+
+API reference
+-------------
+
+- :doc:`UiFlow API </uiflow_examples/API-reference>`
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Examples Pages:
+   :titlesonly:
+   :hidden:
+
    /uiflow_examples/API-reference
