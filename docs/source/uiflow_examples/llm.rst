@@ -1,11 +1,44 @@
 Large Language Model
 ====================
 
+This example is for the M5Stack Module LLM. It requires the M5Stack Module LLM to be connected to the M5Stack CoreS3, Core2 or Basic.
+
 **Before using, make sure you have the latest software packages installed**
+
+.. tip::
+
+    Need help getting started? :ref:`View the tutorial <quickstart-software-upgrade>`.
 
 .. code-block:: shell
 
     apt install llm-llm
+
+UIFLOW2 Example
+---------------
+
+**Before using, make sure you have the latest model packages installed**
+
+.. code-block:: shell
+
+    apt install llm-model-qwen2.5-0.5b-prefill-20e
+
+.. tip::
+
+    For more information about this model :ref:`see the details <qwen2.5-0.5b-prefill-20e>`.
+
+**Click here to jump to** `text_assistant: <https://uiflow2.m5stack.com/?pkey=167c2996558d421eb8826f92d79239e6>`_ 
+
+.. image:: ../images/uiflow2/llm/uiflow2_block_1747296964450.svg
+   :alt: Example image
+
+.. image:: ../images/uiflow2/llm/uiflow2_block_1747296970644.svg
+   :alt: Example image
+
+.. image:: ../images/uiflow2/llm/uiflow2_block_1747296853251.svg
+   :alt: Example image
+
+.. image:: ../images/uiflow2/llm/uiflow2_block_1747296942430.svg
+   :alt: Example image
 
 Micropython Example
 -------------------
@@ -15,6 +48,10 @@ Micropython Example
 .. code-block:: shell
 
     apt install llm-model-qwen2.5-0.5b-prefill-20e
+
+.. tip::
+
+    For more information about this model :ref:`see the details <qwen2.5-0.5b-prefill-20e>`.
 
 .. code-block:: python
 
@@ -106,26 +143,3 @@ Micropython Example
                 print_error_msg(e)
             except ImportError:
                 print("please update to latest firmware")
-
-UIFLOW2 Example
----------------
-
-**Before using, make sure you have the latest model packages installed**
-
-.. code-block:: shell
-
-    apt install llm-model-qwen2.5-0.5b-prefill-20e
-
-.. image:: ../images/uiflow2/llm/uiflow2_block_1747296964450.svg
-   :alt: Example image
-
-.. image:: ../images/uiflow2/llm/uiflow2_block_1747296970644.svg
-   :alt: Example image
-
-.. image:: ../images/uiflow2/llm/uiflow2_block_1747296853251.svg
-   :alt: Example image
-
-.. image:: ../images/uiflow2/llm/uiflow2_block_1747296942430.svg
-   :alt: Example image
-
-`text_assistant: <https://uiflow2.m5stack.com/?pkey=167c2996558d421eb8826f92d79239e6>`_ 

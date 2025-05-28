@@ -1,11 +1,42 @@
 Text-to-Speech
 ==============
 
+This example is for the M5Stack Module LLM. It requires the M5Stack Module LLM to be connected to the M5Stack CoreS3, Core2 or Basic.
+
 **Before using, make sure you have the latest software packages installed**
+
+.. tip::
+
+    Need help getting started? :ref:`View the tutorial <quickstart-software-upgrade>`.
 
 .. code-block:: shell
 
     apt install llm-melotts
+
+UIFLOW2 English Example
+-----------------------
+
+**Before using, make sure you have the latest model packages installed**
+
+.. code-block:: shell
+
+    apt install llm-model-melotts-en-default
+
+.. tip::
+
+    For more information about this model :ref:`see the details <melotts-en-default>`.
+
+.. image:: ../images/uiflow2/text-to-speech/uiflow2_block_1747367104955.svg
+   :alt: Example image
+
+.. image:: ../images/uiflow2/text-to-speech/uiflow2_block_1747367110491.svg
+   :alt: Example image
+
+.. image:: ../images/uiflow2/text-to-speech/uiflow2_block_1747367107959.svg
+   :alt: Example image
+
+.. image:: ../images/uiflow2/text-to-speech/uiflow2_tts_001.png
+   :alt: Example image
 
 Micropython English Example
 ---------------------------
@@ -15,6 +46,10 @@ Micropython English Example
 .. code-block:: shell
 
     apt install llm-model-melotts-en-default
+
+.. tip::
+
+    For more information about this model :ref:`see the details <melotts-en-default>`.
 
 .. code-block:: python
 
@@ -88,19 +123,23 @@ Micropython English Example
             except ImportError:
                 print("please update to latest firmware")
 
-UIFLOW2 English Example
------------------------
+UIFLOW2 Japanese Example
+------------------------
 
 **Before using, make sure you have the latest model packages installed**
 
+.. tip::
+
+    For more information about this model :ref:`see the details <melotts-ja-jp>`.
+
 .. code-block:: shell
 
-    apt install llm-model-melotts-en-default
+    apt install llm-model-melotts-ja-jp
 
-.. image:: ../images/uiflow2/text-to-speech/uiflow2_block_1747367104955.svg
+.. image:: ../images/uiflow2/text-to-speech/uiflow2_block_1747367699938.svg
    :alt: Example image
 
-.. image:: ../images/uiflow2/text-to-speech/uiflow2_block_1747367110491.svg
+.. image:: ../images/uiflow2/text-to-speech/uiflow2_block_1747367709278.svg
    :alt: Example image
 
 .. image:: ../images/uiflow2/text-to-speech/uiflow2_block_1747367107959.svg
@@ -110,6 +149,10 @@ Micropython Japanese Example
 ----------------------------
 
 **Before using, make sure you have the latest model packages installed**
+
+.. tip::
+
+    For more information about this model :ref:`see the details <melotts-ja-jp>`.
 
 .. code-block:: shell
 
@@ -186,21 +229,3 @@ Micropython Japanese Example
                 print_error_msg(e)
             except ImportError:
                 print("please update to latest firmware")
-
-UIFLOW2 Japanese Example
-------------------------
-
-**Before using, make sure you have the latest model packages installed**
-
-.. code-block:: shell
-
-    apt install llm-model-melotts-ja-jp
-
-.. image:: ../images/uiflow2/text-to-speech/uiflow2_block_1747367699938.svg
-   :alt: Example image
-
-.. image:: ../images/uiflow2/text-to-speech/uiflow2_block_1747367709278.svg
-   :alt: Example image
-
-.. image:: ../images/uiflow2/text-to-speech/uiflow2_block_1747367107959.svg
-   :alt: Example image

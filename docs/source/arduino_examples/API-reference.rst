@@ -26,6 +26,7 @@ struct ApiKwsSetupConfig_t
 - **kws**: The wake-up keyword to listen for. Must be capitalized.
 - **model**: The model to use for keyword spotting. Default is **sherpa-onnx-kws-zipformer-gigaspeech-3.3M-2024-01-01** for English. see the available models: :ref:`sherpa-onnx-kws-zipformer <kws_models>`.
 - **input**: The input format for the KWS module. Default is **sys.pcm**, which means it will process Onboard microphone audio data.
+- **enoutput**: If true, the KWS module will return the boolean result in the response. Default is **true**.
 - **enaudio**: If true, the KWS module will play the wake-up audio. Default is **true**.
 
 function setup
@@ -278,7 +279,7 @@ struct ApiVlmSetupConfig_t
     };
 
 - **prompt**: The prompt for the VLM model. The prompt is used to initialize the model and can be used to set the context for the model.
-- **model**: The model name. You can use **internvl2.5-1B-ax630c** for the InternVL2.5 model. see the available models: :ref:`Reasoning models <Multimodal_Models>`
+- **model**: The model name. You can use **internvl2.5-1B-ax630c** for the InternVL2.5 model. see the available models: :ref:`Multimodal models <Multimodal_Models>`
 - **response_format**: The response format.
 - **max_token_len**: The maximum number of tokens to generate. The default is 255. You can set it to 512 for larger models.
 

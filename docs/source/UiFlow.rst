@@ -20,3 +20,4 @@ Examples
    /uiflow_examples/whisper
    /uiflow_examples/llm
    /uiflow_examples/voice_assistant
+   /uiflow_examples/API-reference

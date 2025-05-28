@@ -1,11 +1,40 @@
 Voice Assistant
 ===============
 
+This example is for the M5Stack Module LLM. It requires the M5Stack Module LLM to be connected to the M5Stack CoreS3, Core2 or Basic.
+
+The example demonstrates how to use the M5ModuleLLM library to implement a voice assistant.
+
 **Before using, make sure you have the latest software packages installed**
+
+.. tip::
+
+    Need help getting started? :ref:`View the tutorial <quickstart-software-upgrade>`.
 
 .. code-block:: shell
 
     apt install llm-whisper llm-kws llm-vad llm-llm llm-melotts
+
+UIFLOW2 English Example
+-----------------------
+
+**Before using, make sure you have the latest model packages installed**
+
+.. code-block:: shell
+
+    apt install llm-model-whisper-tiny llm-model-silero-vad llm-model-sherpa-onnx-kws-zipformer-gigaspeech-3.3m-2024-01-01 llm-model-melotts-en-default
+
+.. image:: ../images/uiflow2/voice_assistant/uiflow2_block_1747366075777.svg
+   :alt: Example image
+
+.. image:: ../images/uiflow2/voice_assistant/uiflow2_block_1747361810832.svg
+   :alt: Example image
+
+.. image:: ../images/uiflow2/voice_assistant/uiflow2_block_1747361813276.svg
+   :alt: Example image
+
+.. image:: ../images/uiflow2/voice_assistant/uiflow2_block_1747361805085.svg
+   :alt: Example image
 
 Micropython English Example
 ---------------------------
@@ -116,16 +145,16 @@ Micropython English Example
             except ImportError:
                 print("please update to latest firmware")
 
-UIFLOW2 English Example
------------------------
+UIFLOW2 Japanese Example
+------------------------
 
 **Before using, make sure you have the latest model packages installed**
 
 .. code-block:: shell
 
-    apt install llm-model-whisper-tiny llm-model-silero-vad llm-model-sherpa-onnx-kws-zipformer-gigaspeech-3.3m-2024-01-01 llm-model-melotts-en-default
+    apt install llm-model-whisper-tiny llm-model-silero-vad llm-model-sherpa-onnx-kws-zipformer-gigaspeech-3.3m-2024-01-01 llm-model-melotts-ja-jp
 
-.. image:: ../images/uiflow2/voice_assistant/uiflow2_block_1747366075777.svg
+.. image:: ../images/uiflow2/voice_assistant/uiflow2_block_1747366290339.svg
    :alt: Example image
 
 .. image:: ../images/uiflow2/voice_assistant/uiflow2_block_1747361810832.svg
@@ -245,24 +274,3 @@ Micropython Japanese Example
                 print_error_msg(e)
             except ImportError:
                 print("please update to latest firmware")
-
-UIFLOW2 Japanese Example
-------------------------
-
-**Before using, make sure you have the latest model packages installed**
-
-.. code-block:: shell
-
-    apt install llm-model-whisper-tiny llm-model-silero-vad llm-model-sherpa-onnx-kws-zipformer-gigaspeech-3.3m-2024-01-01 llm-model-melotts-ja-jp
-
-.. image:: ../images/uiflow2/voice_assistant/uiflow2_block_1747366290339.svg
-   :alt: Example image
-
-.. image:: ../images/uiflow2/voice_assistant/uiflow2_block_1747361810832.svg
-   :alt: Example image
-
-.. image:: ../images/uiflow2/voice_assistant/uiflow2_block_1747361813276.svg
-   :alt: Example image
-
-.. image:: ../images/uiflow2/voice_assistant/uiflow2_block_1747361805085.svg
-   :alt: Example image

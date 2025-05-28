@@ -1,11 +1,41 @@
 whisper
 =======
 
+This example is for the M5Stack Module LLM. It requires the M5Stack Module LLM to be connected to the M5Stack CoreS3, Core2 or Basic.
+
+The example demonstrates how to use the M5ModuleLLM library to perform keyword spotting (KWS), voice activity detection (VAD), and automatic speech recognition (ASR) using the Whisper model.
+
 **Before using, make sure you have the latest software packages installed**
+
+.. tip::
+
+    Need help getting started? :ref:`View the tutorial <quickstart-software-upgrade>`.
 
 .. code-block:: shell
 
     apt install llm-whisper llm-kws llm-vad
+
+UIFLOW2 English Example
+-----------------------
+
+**Before using, make sure you have the latest model packages installed**
+
+.. code-block:: shell
+
+    apt install llm-model-whisper-tiny llm-model-silero-vad llm-model-sherpa-onnx-kws-zipformer-gigaspeech-3.3m-2024-01-01
+
+.. tip::
+
+    For more information about this model :ref:`see the details <whisper-tiny_model>`.
+
+.. image:: ../images/uiflow2/whisper/uiflow2_block_1747299497165.svg
+   :alt: Example image
+
+.. image:: ../images/uiflow2/whisper/uiflow2_block_1747299502009.svg
+   :alt: Example image
+
+.. image:: ../images/uiflow2/whisper/uiflow2_block_1747299505136.svg
+   :alt: Example image
 
 Micropython English Example
 ---------------------------
@@ -15,6 +45,10 @@ Micropython English Example
 .. code-block:: shell
 
     apt install llm-model-whisper-tiny llm-model-silero-vad llm-model-sherpa-onnx-kws-zipformer-gigaspeech-3.3m-2024-01-01
+
+.. tip::
+
+    For more information about this model :ref:`see the details <whisper-tiny_model>`.
 
 .. code-block:: python
 
@@ -89,8 +123,8 @@ Micropython English Example
             except ImportError:
                 print("please update to latest firmware")
 
-UIFLOW2 English Example
------------------------
+UIFLOW2 Japanese Example
+------------------------
 
 **Before using, make sure you have the latest model packages installed**
 
@@ -98,7 +132,11 @@ UIFLOW2 English Example
 
     apt install llm-model-whisper-tiny llm-model-silero-vad llm-model-sherpa-onnx-kws-zipformer-gigaspeech-3.3m-2024-01-01
 
-.. image:: ../images/uiflow2/whisper/uiflow2_block_1747299497165.svg
+.. tip::
+
+    For more information about this model :ref:`see the details <whisper-tiny_model>`.
+
+.. image:: ../images/uiflow2/whisper/uiflow2_block_1747300656108.svg
    :alt: Example image
 
 .. image:: ../images/uiflow2/whisper/uiflow2_block_1747299502009.svg
@@ -115,6 +153,10 @@ Micropython Japanese Example
 .. code-block:: shell
 
     apt install llm-model-whisper-tiny llm-model-silero-vad llm-model-sherpa-onnx-kws-zipformer-gigaspeech-3.3m-2024-01-01
+
+.. tip::
+
+    For more information about this model :ref:`see the details <whisper-tiny_model>`.
 
 .. code-block:: python
 
@@ -188,22 +230,3 @@ Micropython Japanese Example
             print_error_msg(e)
         except ImportError:
             print("please update to latest firmware")
-
-
-UIFLOW2 Japanese Example
-------------------------
-
-**Before using, make sure you have the latest model packages installed**
-
-.. code-block:: shell
-
-    apt install llm-model-whisper-tiny llm-model-silero-vad llm-model-sherpa-onnx-kws-zipformer-gigaspeech-3.3m-2024-01-01
-
-.. image:: ../images/uiflow2/whisper/uiflow2_block_1747300656108.svg
-   :alt: Example image
-
-.. image:: ../images/uiflow2/whisper/uiflow2_block_1747299502009.svg
-   :alt: Example image
-
-.. image:: ../images/uiflow2/whisper/uiflow2_block_1747299505136.svg
-   :alt: Example image
